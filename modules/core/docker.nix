@@ -1,6 +1,10 @@
-{ username, ... }:
+{ pkgs, username, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    docker-compose
+  ];
+
   # Add user to docker group
   users.users.${username}.extraGroups = [ "docker" ];
 

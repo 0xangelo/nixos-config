@@ -2,6 +2,7 @@
 {
   home.packages = (with pkgs; [
     bitwise                           # cli tool for bit / hex manipulation
+    curl
     evince                            # gnome pdf viewer
     eza                               # ls replacement
     entr                              # perform action when file change
@@ -17,14 +18,18 @@
     lazygit
     libreoffice
     cinnamon.nemo-with-extensions     # file manager
+    neovide                           # neovim gui in rust
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     soundwireserver                   # pass audio to android phone
     tdf                               # cli pdf viewer
+    telegram-desktop
+    tldr                              # simplified man pages
     todo                              # cli todo list
     toipe                             # typing test in the terminal
+    tree                              # list contents of directories in a tree-like format
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
@@ -38,6 +43,13 @@
 
     # Python
     python3
+
+    # Rust development
+    bacon
+    cmake
+    llvmPackages.libcxxClang
+    pkg-config                        # metainformation about installed libraries
+    rustup
 
     bleachbit                         # cache cleaner
     cmatrix
