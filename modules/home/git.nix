@@ -26,5 +26,8 @@
       prompt = "enabled";
     };
   };
-  # home.packages = [ pkgs.gh pkgs.git-lfs ];
+
+  home.packages = with pkgs [ 
+    gh
+  ];
 }
