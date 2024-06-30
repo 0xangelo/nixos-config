@@ -41,7 +41,7 @@
 
     # C / C++
     clang
-    (hiPrio gcc)
+    (hiPrio gcc) # https://github.com/nix-community/home-manager/issues/1668#issuecomment-1264298055
     gnumake
 
     # Python
