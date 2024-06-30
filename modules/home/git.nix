@@ -14,7 +14,27 @@
     extraConfig = { 
       init.defaultBranch = "main";
       # credential.helper = "store";
+      core = {
+        sshCommand = "ssh -i ~/.ssh/id_ed25519";
+      };
     };
+
+    # https://seansantry.com/development/2022/12/14/split-git-nix/
+    includes = [
+      {
+        contents = {
+          user = {
+	          email = "12701614+0xangelo@users.noreply.github.com";
+	        };
+
+	        core = {
+	          sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
+          };
+        };
+
+        condition = "gitdir:~/git/0xangelo/";
+      }
+    ];
   };
 
   programs.gh = {
