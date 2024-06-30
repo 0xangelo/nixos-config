@@ -38,11 +38,10 @@
     };
   };
 
-  outputs = { nixpkgs, self, ...} @ inputs:
   outputs = { nixos-hardware, nixpkgs, self, ...} @ inputs:
   let
     selfPkgs = import ./pkgs;
-    username = "frostphoenix";
+    username = "doom";
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
