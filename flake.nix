@@ -2,6 +2,7 @@
   description = "FrostPhoenix's nixos configuration";
 
   inputs = {
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
   
@@ -58,7 +59,10 @@
       };
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/laptop) ];
+        modules = [ 
+          (import ./hosts/laptop)
+          nixos-hardware.nixosModules.framework-16-7040-amd
+        ];
         specialArgs = { host="laptop"; inherit self inputs username ; };
       };
        vm = nixpkgs.lib.nixosSystem {
