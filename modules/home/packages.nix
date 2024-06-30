@@ -49,7 +49,7 @@
     # Rust development
     bacon
     cmake
-    llvmPackages.libcxxClang
+    # llvmPackages.libcxxClang
     pkg-config                        # metainformation about installed libraries
     rustup
 
