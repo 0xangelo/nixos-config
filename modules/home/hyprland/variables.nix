@@ -1,6 +1,11 @@
-{ ... }:
+{ pkgs, ... }:
 {
   home.sessionVariables = {
+    EDITOR = "nvim";
+    PATH = "$PATH:$HOME/.cargo/bin";
+    PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
+    LIBCLANG_PATH = "${pkgs.llvmPackages.libclang.lib}/lib";
+
     NIXOS_OZONE_WL = "1";
     __GL_GSYNC_ALLOWED = "0";
     __GL_VRR_ALLOWED = "0";
