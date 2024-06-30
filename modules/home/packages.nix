@@ -40,7 +40,8 @@
     wineWowPackages.wayland
 
     # C / C++
-    gcc
+    clang
+    (hiPrio gcc)
     gnumake
 
     # Python
@@ -49,7 +50,6 @@
     # Rust development
     bacon
     cmake
-    # llvmPackages.libcxxClang
     pkg-config                        # metainformation about installed libraries
     rustup
 
