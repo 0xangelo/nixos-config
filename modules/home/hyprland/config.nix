@@ -20,7 +20,7 @@
       ];
 
       input = {
-        kb_layout = "us,fr";
+        kb_layout = "us";
         kb_options ="grp:alt_caps_toggle,caps:escape"; 
         numlock_by_default = true;
         follow_mouse = 1;
