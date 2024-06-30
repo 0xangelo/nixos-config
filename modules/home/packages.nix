@@ -1,7 +1,9 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    bitwarden-cli
     bitwise                           # cli tool for bit / hex manipulation
+    brave                             # browser
     curl
     evince                            # gnome pdf viewer
     eza                               # ls replacement
