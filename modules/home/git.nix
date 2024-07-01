@@ -32,7 +32,20 @@
           };
         };
 
-        condition = "gitdir:{~/git/0xangelo/,~/nixos-config/}";
+        condition = "gitdir:~/git/0xangelo/";
+      }
+      {
+        contents = {
+          user = {
+	          email = "12701614+0xangelo@users.noreply.github.com";
+	        };
+
+	        core = {
+	          sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
+          };
+        };
+
+        condition = "gitdir:~/nixos-config/";
       }
     ];
   };
