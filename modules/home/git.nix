@@ -32,7 +32,7 @@
           };
         };
 
-        condition = "gitdir:~/git/0xangelo/";
+        condition = "gitdir:{~/git/0xangelo/,~/nixos-config/}";
       }
     ];
   };
