@@ -10,7 +10,7 @@
     ++ [(import ./fuzzel.nix)]                    # launcher
     # ++ [(import ./gaming.nix)]                    # packages related to gaming
     ++ [(import ./git.nix)]                       # version control
-    ++ [(import ./gpg.nix)]                       # version control
+    # ++ [(import ./gpg.nix)]                       # message signing
     ++ [(import ./gtk.nix)]                       # gtk theme
     ++ [(import ./hyprland)]                      # window manager
     ++ [(import ./kitty.nix)]                     # terminal
