@@ -25,4 +25,6 @@
     # ++ [(import ./vscodium.nix)]                  # vscode forck
     ++ [(import ./waybar)]                        # status bar
     ++ [(import ./zsh.nix)];                      # shell
+
+  home.preferXdgDirectories = true;
 }
