@@ -176,6 +176,7 @@
         "$mainMod, 0, workspace, 10"
         "$mainMod, G, workspace, -1"
         "$mainMod, SEMICOLON, workspace, +1"
+        "$mainMod, TAB, workspace, previous"
 
         # same as above, but switch to the workspace
         "$mainMod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent
