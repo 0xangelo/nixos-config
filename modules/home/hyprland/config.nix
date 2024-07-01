@@ -22,6 +22,8 @@
       input = {
         kb_layout = "us";
         kb_options ="caps:escape"; 
+        repeat_rate = 50;
+        repeat_delay = 200;
         numlock_by_default = true;
         follow_mouse = 1;
         sensitivity = 0;
