@@ -4,6 +4,8 @@
     xserver = {
       enable = true;
       xkb.layout = "us";
+      autoRepeatInterval = 20;
+      autoRepeatDelay = 200;
     };
 
     displayManager.autoLogin = {
