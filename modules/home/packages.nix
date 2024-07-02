@@ -23,6 +23,7 @@
     neovide                           # neovim gui in rust
     nitch                             # systhem fetch util
     nix-prefetch-github
+    pass-wayland                      # password manager
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     soundwireserver                   # pass audio to android phone
