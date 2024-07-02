@@ -23,6 +23,8 @@
   ascii = pkgs.writeScriptBin "ascii" (builtins.readFile ./scripts/ascii.sh);
   
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
+
+  repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -49,5 +51,7 @@ in {
     ascii
 
     record
+
+    repo-clone
   ];
 }
