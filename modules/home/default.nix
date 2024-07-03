@@ -1,4 +1,4 @@
-{inputs, username, host, ...}: {
+{ ... }: {
   imports =
        [(import ./aseprite/aseprite.nix)]         # pixel art editor
     ++ [(import ./audacious/audacious.nix)]       # music player
@@ -18,6 +18,7 @@
     ++ [(import ./micro.nix)]                     # nano replacement
     ++ [(import ./nvim.nix)]                      # neovim editor
     ++ [(import ./packages.nix)]                  # other packages
+    ++ [(import ./password_store.nix)]            # GNU password store
     # ++ [(import ./retroarch.nix)]
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./starship.nix)]                  # shell prompt
