@@ -14,7 +14,6 @@
         "hyprctl setcursor Nordzy-cursors 22 &"
         "poweralertd &"
         "waybar &"
-        "swaync &"
         "wl-paste --watch cliphist store &"
         "hyprlock"
       ];
