@@ -25,8 +25,11 @@
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
+
+  bw-cache = pkgs.writeShellScriptBin "bw-cache" (builtins.readFile ./scripts/bw-cache.sh);
+  bw-unlock = pkgs.writeShellScriptBin "bw-unlock" (builtins.readFile ./scripts/bw-unlock.sh);
 in {
-  home.packages = with pkgs; [
+  home.packages = [
     wall-change
     wallpaper-picker
     
@@ -53,5 +56,8 @@ in {
     record
 
     repo-clone
+
+    bw-cache
+    bw-unlock
   ];
 }
