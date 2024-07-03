@@ -21,7 +21,7 @@
     # ++ [(import ./retroarch.nix)]
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./starship.nix)]                  # shell prompt
-    ++ [(import ./swaylock.nix)]                  # lock screen
+    # ++ [(import ./swaylock.nix)]                  # lock screen
     # ++ [(import ./vscodium.nix)]                  # vscode forck
     ++ [(import ./waybar)]                        # status bar
     ++ [(import ./zsh.nix)];                      # shell
