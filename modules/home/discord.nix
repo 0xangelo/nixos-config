@@ -19,4 +19,8 @@
 
     @import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
   '';
+
+  programs.zsh.shellAliases = {
+    discord = "discord --enable-features=UseOzonePlatform --ozone-platform=wayland";
+  };
 }
