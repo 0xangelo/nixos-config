@@ -2,7 +2,6 @@
   "positionX": "right",
   "positionY": "top",
   "layer": "overlay",
-  "layer-shell": "true",
   "cssPriority": "application",
   "control-center-margin-top": 10,
   "control-center-margin-bottom": 10,
@@ -28,7 +27,6 @@
     "title",
     "menubar#desktop",
     "volume",
-    "backlight#mobile",
     "mpris",
     "dnd",
     "notifications"
@@ -112,10 +110,6 @@
           }
         ]
       }
-    },
-    "backlight#mobile": {
-      "label": " 󰃠 ",
-      "device": "panel"
     },
     "volume": {
       "label": "",
