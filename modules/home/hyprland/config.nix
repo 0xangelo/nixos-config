@@ -16,6 +16,7 @@
         "waybar &"
         "wl-paste --watch cliphist store &"
         "hyprlock"
+        "hypridle"
       ];
 
       input = {
