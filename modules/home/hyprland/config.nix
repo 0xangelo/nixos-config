@@ -142,7 +142,6 @@
         "$mainMod, Space, togglefloating,"
         "$mainMod, D, exec, fuzzel"
         "$mainMod SHIFT, D, exec, passmenu-wrapped"
-        "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, loginctl lock-session"
         "$mainMod SHIFT, Escape, exec, shutdown-script"
         "$mainMod, P, pseudo,"
@@ -206,8 +205,8 @@
         "$mainMod ALT, J, moveactive, 0 80"
 
         # media and volume controls
-        ",XF86AudioRaiseVolume,exec, pamixer -i 2"
-        ",XF86AudioLowerVolume,exec, pamixer -d 2"
+        ",XF86AudioRaiseVolume,exec, pamixer -i 5"
+        ",XF86AudioLowerVolume,exec, pamixer -d 5"
         ",XF86AudioMute,exec, pamixer -t"
         ",XF86AudioPlay,exec, playerctl play-pause"
         ",XF86AudioNext,exec, playerctl next"
