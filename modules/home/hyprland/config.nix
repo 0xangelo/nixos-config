@@ -141,6 +141,8 @@
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
         "$mainMod, D, exec, fuzzel"
+        # Might work as a login shell?
+        # "$mainMod SHIFT, D, exec, exec -l passmenu"
         "$mainMod SHIFT, D, exec, passmenu-wrapped"
         "$mainMod, Escape, exec, loginctl lock-session"
         "$mainMod SHIFT, Escape, exec, shutdown-script"
