@@ -141,7 +141,7 @@
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
         "$mainMod, D, exec, fuzzel"
-        "$mainMod SHIFT, D, exec, passmenu"
+        "$mainMod SHIFT, D, exec, passmenu-wrapped"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, loginctl lock-session"
         "$mainMod SHIFT, Escape, exec, shutdown-script"

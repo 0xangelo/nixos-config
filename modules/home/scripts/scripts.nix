@@ -28,6 +28,8 @@
 
   bw-cache = pkgs.writeShellScriptBin "bw-cache" (builtins.readFile ./scripts/bw-cache.sh);
   bw-unlock = pkgs.writeShellScriptBin "bw-unlock" (builtins.readFile ./scripts/bw-unlock.sh);
+
+  passmenu-wrapped = pkgs.writeShellScriptBin "passmenu-wrapped" (builtins.readFile ./scripts/passmenu-wrapped.sh);
 in {
   home.packages = [
     wall-change
@@ -59,5 +61,7 @@ in {
 
     bw-cache
     bw-unlock
+
+    passmenu-wrapped
   ];
 }
