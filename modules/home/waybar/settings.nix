@@ -40,14 +40,13 @@
         format = "{icon}";
         on-click= "activate";
         format-icons= {
-            "1"= "󰈹";
+            "1"= "󰖟";
             "2"= "";
-            "3"= "󰘙";
-            "4"= "󰙯";
-            "5"= "";
-            "6"= "";
+            "8"= "";
+            "9"= "";
+            "10"= "󰙯";
             urgent= "";
-            default = "";
+            default = "";
             sort-by-number= true;
         };
         persistent-workspaces = {
