@@ -20,7 +20,6 @@
     lazygit
     libreoffice
     cinnamon.nemo-with-extensions     # file manager
-    neovide                           # neovim gui in rust
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher

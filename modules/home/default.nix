@@ -16,6 +16,7 @@
     ++ [(import ./kitty.nix)]                     # terminal
     ++ [(import ./swaync/swaync.nix)]             # notification deamon
     ++ [(import ./micro.nix)]                     # nano replacement
+    ++ [(import ./neovide.nix)]                   # simple graphical user interface for Neovim
     ++ [(import ./nvim.nix)]                      # neovim editor
     ++ [(import ./packages.nix)]                  # other packages
     ++ [(import ./password_store.nix)]            # GNU password store
