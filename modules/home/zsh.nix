@@ -7,7 +7,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "fzf" "vi-mode"];
+      plugins = [ "git" "vi-mode" "fzf"];
     };
     initExtraFirst = ''
       DISABLE_MAGIC_FUNCTIONS=true
