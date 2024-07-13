@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    bc                                # is a mathematics language used for the dropdown calculator.
     bitwarden-cli
     bitwise                           # cli tool for bit / hex manipulation
     brave                             # browser
