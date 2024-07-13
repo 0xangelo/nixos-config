@@ -17,6 +17,7 @@
         "wl-paste --watch cliphist store &"
         "hyprlock"
         "hypridle"
+        "hyprctl dispatch exec '[workspace special:calculator silent] bc'"
       ];
 
       input = {
@@ -150,14 +151,14 @@
         "$mainMod, T, togglesplit,"
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
-        "$mainMod, C ,exec, hyprpicker -a"
+        "$mainMod, C, togglespecialworkspace, calculator"
+        "$mainMod SHIFT, C, exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
         "$mainMod SHIFT, W, exec, vm-start"
-        "$mainMod, O, togglespecialworkspace, calculator"
 
         # screenshot
         "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        ",Print, exec, grimblast --notify --cursor --freeze copy area"
+        ", Print, exec, grimblast --notify --cursor --freeze copy area"
 
         # switch focus
         "$mainMod, H, movefocus, l"
