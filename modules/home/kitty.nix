@@ -37,6 +37,10 @@
       "alt+3" = "goto_tab 3";
       "alt+4" = "goto_tab 4";
 
+      ## Scrolling
+      "alt+j" = "scroll_line_down";
+      "alt+k" = "scroll_line_up";
+
       ## Unbind
       "ctrl+shift+left" = "no_op";
       "ctrl+shift+right" = "no_op";
