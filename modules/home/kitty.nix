@@ -40,6 +40,8 @@
       ## Scrolling
       "alt+j" = "scroll_line_down";
       "alt+k" = "scroll_line_up";
+      "alt+d" = "scroll_page_down";
+      "alt+u" = "scroll_page_up";
 
       ## Unbind
       "ctrl+shift+left" = "no_op";
