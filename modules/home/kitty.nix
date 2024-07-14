@@ -52,14 +52,4 @@
       "ctrl+shift+right" = "no_op";
     };
   };
-
-  xdg.configFile."kitty/ssh.conf".text = ''
-    # Have these settings apply to servers in my organization
-    hostname server-7.aftermath.finance
-
-    # Setup zsh to read its files from ~
-    env ZDOTDIR $HOME
-    copy --dest .zshrc .zshrc
-    copy --dest .zshenv .zshenv
-  '';
 }
