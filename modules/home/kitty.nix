@@ -37,6 +37,10 @@
       "alt+3" = "goto_tab 3";
       "alt+4" = "goto_tab 4";
 
+      ## Clipboard
+      "alt+c" = "copy_to_clipboard";
+      "alt+v" = "paste_from_clipboard";
+
       ## Scrolling
       "alt+j" = "scroll_line_down";
       "alt+k" = "scroll_line_up";
