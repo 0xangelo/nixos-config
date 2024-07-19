@@ -18,6 +18,7 @@
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
     jdk17                             # java
+    jq                                # Lightweight and flexible command-line JSON processor
     lazygit
     libreoffice
     cinnamon.nemo-with-extensions     # file manager
