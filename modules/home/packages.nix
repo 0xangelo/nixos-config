@@ -37,6 +37,7 @@
     yazi                              # terminal file manager
     youtube-dl
     gnome.zenity
+    zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
 
