@@ -11,4 +11,7 @@ command = "notify-send --app-name uair --icon clock 'Work Done!'"
 id = "rest"
 name = "Rest"
 duration = "5m"
-command = "notify-send --app-name uair --icon clock 'Rest Done!'"
+command = """
+notify-send --app-name uair --icon clock 'Rest Done!' \
+&& uairctl jump work
+"""
