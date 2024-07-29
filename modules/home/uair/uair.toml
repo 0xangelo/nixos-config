@@ -5,10 +5,10 @@ format = "{time}\n"
 id = "work"
 name = "Work"
 duration = "25m"
-command = "notify-send 'Work Done!'"
+command = "notify-send --app-name uair --icon clock 'Work Done!'"
 
 [[sessions]]
 id = "rest"
 name = "Rest"
 duration = "5m"
-command = "notify-send 'Rest Done!'"
+command = "notify-send --app-name uair --icon clock 'Rest Done!'"
