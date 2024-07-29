@@ -25,6 +25,7 @@
     ++ [(import ./starship.nix)]                  # shell prompt
     # ++ [(import ./swaylock.nix)]                  # lock screen
     # ++ [(import ./vscodium.nix)]                  # vscode forck
+    ++ [(import ./uair/uair.nix)]                 # Extensible pomodoro timer
     ++ [(import ./waybar)]                        # status bar
     ++ [(import ./zsh.nix)];                      # shell
 

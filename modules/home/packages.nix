@@ -33,7 +33,6 @@
     todo                              # cli todo list
     toipe                             # typing test in the terminal
     tree                              # list contents of directories in a tree-like format
-    uair                              # Extensible pomodoro timer
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
