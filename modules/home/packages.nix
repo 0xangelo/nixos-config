@@ -35,7 +35,7 @@
     tree                              # list contents of directories in a tree-like format
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
-    youtube-dl
+    yt-dlp                            # YouTube downloader
     gnome.zenity
     zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
