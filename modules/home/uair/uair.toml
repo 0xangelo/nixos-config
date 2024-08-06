@@ -4,13 +4,13 @@ format = "{time}\n"
 [[sessions]]
 id = "work"
 name = "Work"
-duration = "25m"
+duration = "50m"
 command = "notify-send --app-name uair --icon clock 'Work Done!'"
 autostart = true
 
 [[sessions]]
 id = "rest"
 name = "Rest"
-duration = "5m"
+duration = "10m"
 command = "notify-send --app-name uair --icon clock 'Rest Done!'"
 autostart = true
