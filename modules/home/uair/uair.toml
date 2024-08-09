@@ -2,6 +2,7 @@ loop_on_end = true
 
 [defaults]
 format = "{time}\n"
+time_format = "%M:%S"
 
 [[sessions]]
 id = "work"
