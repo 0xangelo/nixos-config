@@ -21,7 +21,7 @@
     jq                                # Lightweight and flexible command-line JSON processor
     lazygit
     libreoffice
-    cinnamon.nemo-with-extensions     # file manager
+    nemo-with-extensions              # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
@@ -36,7 +36,7 @@
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     yt-dlp                            # YouTube downloader
-    gnome.zenity
+    zenity
     zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
