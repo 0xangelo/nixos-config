@@ -6,7 +6,7 @@
   systemd.user.services = {
     uair = {
       Unit = {
-        Description = "Uair";
+        Description = "Uair pomodoro timer";
       };
       Service = {
         Type = "simple";
