@@ -10,7 +10,7 @@
       };
       Service = {
         Type = "simple";
-        ExecStart = "/usr/bin/env uair -q";
+        ExecStart = "${pkgs.uair}/bin/uair -q";
       };
       Install = {
         WantedBy = ["default.target"];
