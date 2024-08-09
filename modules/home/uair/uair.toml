@@ -1,16 +1,18 @@
+loop-on-end = true
+
 [defaults]
 format = "{time}\n"
+paused_state_text = "paused"
+resumed_state_text = "resumed"
 
 [[sessions]]
 id = "work"
 name = "Work"
 duration = "50m"
 command = "notify-send --app-name uair --icon clock 'Work Done!'"
-autostart = true
 
 [[sessions]]
 id = "rest"
 name = "Rest"
 duration = "10m"
 command = "notify-send --app-name uair --icon clock 'Rest Done!'"
-autostart = true
