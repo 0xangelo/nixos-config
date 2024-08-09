@@ -22,6 +22,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    cups # Standards-based printing system for UNIX
     wget
     git
   ];
