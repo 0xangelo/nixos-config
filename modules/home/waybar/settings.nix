@@ -132,19 +132,7 @@
         escape = true;
     };
     "custom/uair" = {
-        format = "{icon} {}";
-        format-icons = [
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-          ""
-        ];
+        format = " {}";
         tooltip = false;
         return-type = "json";
         interval = 5;
@@ -152,7 +140,7 @@
         on-click-middle = "uairctl prev";
         on-click-right = "uairctl next";
         exec-if = "which uairctl";
-        exec = "uairctl fetch '{\"text\":\"{name} {time} {percent}%\",\"class\":\"{state}\",\"percentage\":{percent}}'";
+        exec = "uairctl fetch '{\"text\":\"{state} {name} {time}\"}'";
     };
   };
 }

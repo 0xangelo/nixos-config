@@ -1,9 +1,7 @@
-loop-on-end = true
+loop_on_end = true
 
 [defaults]
 format = "{time}\n"
-paused_state_text = "paused"
-resumed_state_text = "resumed"
 
 [[sessions]]
 id = "work"
