@@ -1,9 +1,0 @@
-[Unit]
-Description=Uair
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/env uair -q
-
-[Install]
-WantedBy=default.target
