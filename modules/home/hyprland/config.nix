@@ -194,6 +194,8 @@
         "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
         "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
         "$mainMod CTRL, c, movetoworkspace, empty"
+        "$mainMod SHIFT, G, movetoworkspacesilent, -1"
+        "$mainMod SHIFT, SEMICOLON, movetoworkspacesilent, +1"
 
         # window control
         "$mainMod SHIFT, H, movewindow, l"
