@@ -21,7 +21,7 @@
       c = "clear";
       cd = "z";
       tt = "gtrash put";
-      cat = "bat";
+      cat = "bat --plain";
       nano = "micro";
       code = "codium";
       py = "python";
