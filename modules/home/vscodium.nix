@@ -84,6 +84,11 @@
       "C_Cpp.workspaceParsingPriority" = "medium";
       "C_Cpp.clang_format_sortIncludes" = true;
       "C_Cpp.doxygen.generatedStyle" = "/**";
+
+      "sui-move-analyzer.inlay.hints.declare.var" = false;
+      "sui-move-analyzer.inlay.hints.field.type" = false;
+      "sui-move-analyzer.inlay.hints.parameter" = false;
+      "editor.inlayHints.enabled" = "offUnlessPressed";
     };
     # Keybindings
     keybindings = [
