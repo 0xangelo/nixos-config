@@ -24,6 +24,7 @@
       {
         contents = {
           user = {
+            name = "Angelo Gregorio Lovatto (GitHub)";
 	          email = "12701614+0xangelo@users.noreply.github.com";
 	        };
 
@@ -37,6 +38,7 @@
       {
         contents = {
           user = {
+            name = "Angelo Gregorio Lovatto (GitHub)";
 	          email = "12701614+0xangelo@users.noreply.github.com";
 	        };
 
