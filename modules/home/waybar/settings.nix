@@ -1,4 +1,7 @@
-{ ... }:
+{ username, ... }:
+let
+  uairctl = "/home/${username}/.cargo/bin/uairctl";
+in
 {
   programs.waybar.settings.mainBar = {
     position= "bottom";
@@ -136,11 +139,11 @@
         tooltip = false;
         return-type = "json";
         interval = 5;
-        on-click = "uairctl toggle";
-        on-click-middle = "uairctl prev";
-        on-click-right = "uairctl next";
-        exec-if = "which uairctl";
-        exec = "uairctl fetch '{\"text\":\"{state} {name} {time}\"}'";
+        on-click = "${uairctl} toggle";
+        on-click-middle = "${uairctl} prev";
+        on-click-right = "${uairctl} next";
+        exec-if = "which ${uairctl}";
+        exec = "${uairctl} fetch '{\"text\":\"{state} {name} {time}\"}'";
     };
   };
 }
