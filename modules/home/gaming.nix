@@ -4,6 +4,7 @@
     ## Utils
     # gamemode
     # gamescope
+    protontricks
     winetricks
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
 
