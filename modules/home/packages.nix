@@ -19,6 +19,7 @@
     hexdump
     jdk17                             # java
     jq                                # Lightweight and flexible command-line JSON processor
+    jinja2-cli                        # To render ".j2" files (templates)
     lazygit
     libreoffice
     nemo-with-extensions              # file manager
