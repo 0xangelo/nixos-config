@@ -13,6 +13,7 @@
         Type = "simple";
         # ExecStart = "${pkgs.uair}/bin/uair -q";
         ExecStart = "/home/${username}/.cargo/bin/uair -q";
+        Restart = "always";
       };
       Install = {
         WantedBy = ["default.target"];
