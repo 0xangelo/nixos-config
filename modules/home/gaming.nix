@@ -1,10 +1,10 @@
-{ pkgs, config, inputs, ... }: 
+{ pkgs, ... }:
 {
   home.packages = with pkgs;[
     ## Utils
     # gamemode
     # gamescope
-    # winetricks
+    winetricks
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
 
     ## Minecraft
