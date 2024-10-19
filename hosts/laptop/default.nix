@@ -5,6 +5,8 @@
     ./../../modules/core
   ];
 
+  hardware.bluetooth.enable = true;
+
   environment.systemPackages = with pkgs; [
     acpi
     brightnessctl
