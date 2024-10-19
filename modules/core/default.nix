@@ -12,6 +12,7 @@
     ++ [ (import ./program.nix) ]
     ++ [ (import ./security.nix) ]
     ++ [ (import ./services.nix) ]
+    ++ [ (import ./steam.nix) ]
     ++ [ (import ./system.nix) ]
     ++ [ (import ./user.nix) ]
     ++ [ (import ./wayland.nix) ]
