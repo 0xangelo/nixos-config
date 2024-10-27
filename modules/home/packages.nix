@@ -6,6 +6,7 @@
     bitwise                           # cli tool for bit / hex manipulation
     brave                             # browser
     curl
+    dooit                             # An awesome TUI todo manager
     evince                            # gnome pdf viewer
     eza                               # ls replacement
     entr                              # perform action when file change
