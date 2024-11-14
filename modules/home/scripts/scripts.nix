@@ -30,6 +30,8 @@
   bw-unlock = pkgs.writeShellScriptBin "bw-unlock" (builtins.readFile ./scripts/bw-unlock.sh);
 
   passmenu-wrapped = pkgs.writeShellScriptBin "passmenu-wrapped" (builtins.readFile ./scripts/passmenu-wrapped.sh);
+
+  rename-sui-address = pkgs.writeShellScriptBin "rename-sui-address" (builtins.readFile ./scripts/rename-sui-address.sh);
 in {
   home.packages = [
     wall-change
@@ -63,5 +65,7 @@ in {
     bw-unlock
 
     passmenu-wrapped
+
+    rename-sui-address
   ];
 }
