@@ -23,6 +23,7 @@
     jinja2-cli                        # To render ".j2" files (templates)
     lazygit
     libreoffice
+    lsof                              # Lists open files and the corresponding processes
     nemo-with-extensions              # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
