@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -20,6 +20,7 @@
       max_connections = 200;
       max_wal_size = 16384;
       min_wal_size = 1024;
+      listen_addresses = lib.mkForce "*";
     };
   };
 }
