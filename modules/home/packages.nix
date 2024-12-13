@@ -27,6 +27,7 @@
     nemo-with-extensions              # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
+    nodejs                            # Event-driven I/O framework for the V8 JavaScript engine
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     silicon                           # Create beautiful image of your source code
