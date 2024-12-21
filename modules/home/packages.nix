@@ -39,6 +39,7 @@
     toipe                             # typing test in the terminal
     tree                              # list contents of directories in a tree-like format
     valgrind                          # c memory analyzer
+    yarn                              # Fast, reliable, and secure dependency management for javascript
     yazi                              # terminal file manager
     yt-dlp                            # YouTube downloader
     zenity
