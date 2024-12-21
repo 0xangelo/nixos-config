@@ -13,6 +13,7 @@
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
+    glow                              # Render markdown on the CLI, with pizzazz!
     gtt                               # google translate TUI
     gifsicle                          # gif utility
     gimp
