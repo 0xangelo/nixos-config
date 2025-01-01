@@ -32,6 +32,8 @@
   passmenu-wrapped = pkgs.writeShellScriptBin "passmenu-wrapped" (builtins.readFile ./scripts/passmenu-wrapped.sh);
 
   rename-sui-address = pkgs.writeShellScriptBin "rename-sui-address" (builtins.readFile ./scripts/rename-sui-address.sh);
+
+  auto-pr-body = pkgs.writeShellScriptBin "auto-pr-body" (builtins.readFile ./scripts/auto-pr-body.sh);
 in {
   home.packages = [
     wall-change
@@ -67,5 +69,7 @@ in {
     passmenu-wrapped
 
     rename-sui-address
+
+    auto-pr-body
   ];
 }
