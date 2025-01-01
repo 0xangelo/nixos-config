@@ -17,6 +17,11 @@
       core = {
         sshCommand = "ssh -i ~/.ssh/id_ed25519";
       };
+
+      pretty = {
+        # https://stackoverflow.com/a/33807182/7842251
+        PR = "format:- %h **%s**%n%w(0,2,2)%b";
+      };
     };
 
     # https://seansantry.com/development/2022/12/14/split-git-nix/
