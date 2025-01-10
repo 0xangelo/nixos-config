@@ -89,6 +89,15 @@
       "sui-move-analyzer.inlay.hints.field.type" = false;
       "sui-move-analyzer.inlay.hints.parameter" = false;
       "editor.inlayHints.enabled" = "offUnlessPressed";
+
+      "rust-analyzer.completion.excludeTraits" = [
+        "core::borrow::Borrow"
+        "core::borrow::BorrowMut"
+        "std::borrow::Borrow"
+        "std::borrow::BorrowMut"
+        "owo_colors::OwoColorize"
+        "color_eyre::owo_colors::OwoColorize"
+      ];
     };
     # Keybindings
     keybindings = [
