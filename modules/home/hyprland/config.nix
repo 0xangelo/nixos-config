@@ -20,12 +20,6 @@
         "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty bc --quiet'"
       ];
 
-      workspace = [
-        "w[t1], gapsout:0, gapsin:0, border: 0, rounding:0"
-        "w[tg1], gapsout:0, gapsin:0, border: 0, rounding:0"
-        "f[1], gapsout:0, gapsin:0, border: 0, rounding:0"
-      ];
-
       input = {
         kb_layout = "us";
         kb_options ="caps:escape"; 
