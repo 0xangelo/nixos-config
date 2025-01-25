@@ -6,7 +6,7 @@
   ];
 
   services.postgresql = {
-    enable = true;
+    enable = false;
     ensureDatabases = [ "playground" ];
     # https://github.com/NixOS/nixpkgs/issues/1735#issuecomment-1691191070
     authentication = pkgs.lib.mkOverride 10 ''
