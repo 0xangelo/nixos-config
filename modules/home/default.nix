@@ -22,6 +22,7 @@
     ++ [(import ./password_store.nix)]            # GNU password store
     # ++ [(import ./retroarch.nix)]
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
+    ++ [(import ./sops)]                      # secrets manager
     ++ [(import ./starship.nix)]                  # shell prompt
     # ++ [(import ./swaylock.nix)]                  # lock screen
     ++ [(import ./uair/uair.nix)]                 # Extensible pomodoro timer

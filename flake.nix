@@ -1,7 +1,9 @@
 {
-  description = "FrostPhoenix's nixos configuration";
+  description = "NixOS configuration";
 
   inputs = {
+    sops-nix.url = "github:Mic92/sops-nix";
+
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
@@ -38,7 +40,7 @@
     };
   };
 
-  outputs = { nixos-hardware, nixpkgs, self, ...} @ inputs:
+  outputs = { sops-nix, nixos-hardware, nixpkgs, self, ...} @ inputs:
   let
     selfPkgs = import ./pkgs;
     username = "doom";
@@ -57,15 +59,18 @@
         modules = [ (import ./hosts/desktop) ];
         specialArgs = { host="desktop"; inherit self inputs username ; };
       };
+
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ 
           (import ./hosts/laptop)
           nixos-hardware.nixosModules.framework-16-7040-amd
+          sops-nix.nixosModules.sops
         ];
         specialArgs = { host="laptop"; inherit self inputs username ; };
       };
-       vm = nixpkgs.lib.nixosSystem {
+
+      vm = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/vm) ];
         specialArgs = { host="vm"; inherit self inputs username ; };

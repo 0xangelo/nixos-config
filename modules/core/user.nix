@@ -16,6 +16,9 @@
       home.stateVersion = "24.05";
       programs.home-manager.enable = true;
     };
+    sharedModules = [
+      inputs.sops-nix.homeManagerModules.sops
+    ];
   };
 
   users.users.${username} = {
