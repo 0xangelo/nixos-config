@@ -6,7 +6,7 @@ git log --pretty=PR --reverse "$base_ref..HEAD" > $tmpfile
 
 $EDITOR $tmpfile
 
-read -p "Do you want to proceed? (y/n) " yn
+read -p "Do you want to proceed? (y/n) " -n 1 -r yn
 case $yn in
     [Yy]* ) 
       echo "Proceeding..."
