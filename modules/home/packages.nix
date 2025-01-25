@@ -33,6 +33,7 @@
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     silicon                           # Create beautiful image of your source code
+    sops                              # Simple and flexible tool for managing secrets
     soundwireserver                   # pass audio to android phone
     tdf                               # cli pdf viewer
     telegram-desktop
