@@ -31,7 +31,6 @@
     nix-prefetch-github
     nodejs                            # Event-driven I/O framework for the V8 JavaScript engine
     prismlauncher                     # minecraft launcher
-    protobuf                          # Google's data interchange format
     ripgrep                           # grep replacement
     silicon                           # Create beautiful image of your source code
     sops                              # Simple and flexible tool for managing secrets
@@ -50,6 +49,11 @@
     zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
+
+    # gRPC
+    grpcurl
+    grpcui
+    protobuf                          # Google's data interchange format
 
     # C / C++
     clang
