@@ -32,6 +32,8 @@
       # https://youtu.be/aolI_Rz0ZqY?si=dPdJrGRHBiXvVwui
       column.ui = "auto";
       branch.sort = "-committerdate";
+
+      pager.branch = false;
     };
 
     # https://seansantry.com/development/2022/12/14/split-git-nix/
