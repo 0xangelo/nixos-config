@@ -5,6 +5,10 @@
     
     userName = "Angelo Gregorio Lovatto (GitHub)";
 	  userEmail = "12701614+0xangelo@users.noreply.github.com";
+
+	  aliases = { 
+	    blame-deep = "blame -w -C -C -C";
+	  };
     
     signing = {
       key = null;
