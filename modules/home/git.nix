@@ -28,6 +28,10 @@
       };
 
       rerere.enabled = true;
+
+      # https://youtu.be/aolI_Rz0ZqY?si=dPdJrGRHBiXvVwui
+      column.ui = "auto";
+      branch.sort = "-committerdate";
     };
 
     # https://seansantry.com/development/2022/12/14/split-git-nix/
