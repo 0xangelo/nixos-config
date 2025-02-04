@@ -33,6 +33,8 @@
   rename-sui-address = pkgs.writeShellScriptBin "rename-sui-address" (builtins.readFile ./scripts/rename-sui-address.sh);
 
   auto-pr-body = pkgs.writeShellScriptBin "auto-pr-body" (builtins.readFile ./scripts/auto-pr-body.sh);
+
+  download-gist = pkgs.writeShellScriptBin "download-gist" (builtins.readFile ./scripts/download-gist.sh);
 in {
   home.packages = [
     wall-change
@@ -69,5 +71,7 @@ in {
     rename-sui-address
 
     auto-pr-body
+
+    download-gist
   ];
 }
