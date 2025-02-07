@@ -1,5 +1,15 @@
-{ pkgs, ... }: 
-{
+{ pkgs, ... }: let
+  workconfig = {
+    user = {
+      name = "unmaykr (aftermath)";
+      email = "98741738+unmaykr-aftermath@users.noreply.github.com";
+	  };
+
+	  core = {
+      sshCommand = "ssh -i ~/.ssh/id_ed25519";
+    };
+  };
+in {
   programs.git = {
     enable = true;
     
@@ -39,32 +49,16 @@
     # https://seansantry.com/development/2022/12/14/split-git-nix/
     includes = [
       {
-        condition = "gitdir:~/git/AftermathFinance/";
-
-        contents = {
-          user = {
-            name = "unmaykr (aftermath)";
-            email = "98741738+unmaykr-aftermath@users.noreply.github.com";
-	        };
-
-	        core = {
-            sshCommand = "ssh -i ~/.ssh/id_ed25519";
-          };
-        };
+        condition = "gitdir:AftermathFinance/";
+        contents = workconfig;
       }
       {
-        condition = "gitdir:~/git/unmaykr-aftermath/";
-
-        contents = {
-          user = {
-            name = "unmaykr (aftermath)";
-            email = "98741738+unmaykr-aftermath@users.noreply.github.com";
-	        };
-
-	        core = {
-            sshCommand = "ssh -i ~/.ssh/id_ed25519";
-          };
-        };
+        condition = "gitdir:*-aftermath/";
+        contents = workconfig;
+      }
+      {
+        condition = "gitdir:nvim/";
+        contents = workconfig;
       }
     ];
   };
