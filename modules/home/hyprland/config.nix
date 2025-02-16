@@ -241,10 +241,6 @@
         "center,mpv"
         "size 1200 725,mpv"
 
-        "float,title:^(float_kitty)$"
-        "center,title:^(float_kitty)$"
-        "size 950 600,title:^(float_kitty)$"
-
         "float,audacious"
         "workspace 8 silent, audacious"
 
@@ -270,6 +266,10 @@
 
       # windowrulev2
       windowrulev2 = [
+        "float,title:float_kitty"
+        "center,title:float_kitty"
+        "size 950 600,title:float_kitty"
+
         "float, title:^(Picture-in-Picture)$"
         "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
         "pin, title:^(Picture-in-Picture)$"
