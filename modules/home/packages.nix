@@ -51,6 +51,7 @@
     wineWowPackages.wayland
 
     # gRPC
+    buf                               # Create consistent Protobuf APIs that preserve compatibility and comply with design best-practices
     grpcurl
     grpcui
     protobuf                          # Google's data interchange format
