@@ -23,12 +23,10 @@
     jdk17                             # java
     jq                                # Lightweight and flexible command-line JSON processor
     jinja2-cli                        # To render ".j2" files (templates)
-    lazygit
     libreoffice
     lsof                              # Lists open files and the corresponding processes
     nemo-with-extensions              # file manager
     nitch                             # systhem fetch util
-    nix-prefetch-github
     nodejs                            # Event-driven I/O framework for the V8 JavaScript engine
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
@@ -49,6 +47,11 @@
     zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
+
+    # Git
+    gitbutler
+    lazygit
+    nix-prefetch-github
 
     # gRPC
     buf                               # Create consistent Protobuf APIs that preserve compatibility and comply with design best-practices
