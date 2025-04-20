@@ -44,6 +44,8 @@ in
       branch.sort = "-committerdate";
 
       pager.branch = false;
+
+      gitbutler.signCommits = true;
     };
 
     # https://seansantry.com/development/2022/12/14/split-git-nix/
