@@ -143,6 +143,7 @@
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "$mainMod, C, togglespecialworkspace, calculator"
+        "$mainMod, S, togglespecialworkspace, slack"
         "$mainMod SHIFT, C, exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
         "$mainMod SHIFT, W, exec, vm-start"
