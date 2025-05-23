@@ -41,7 +41,7 @@
         border_size = 2;
         "col.active_border" = "rgb(cba6f7) rgb(94e2d5) 45deg";
         "col.inactive_border" = "0x00000000";
-        border_part_of_window = false;
+        # border_part_of_window = false;
         no_border_on_floating = false;
       };
 
@@ -149,8 +149,8 @@
         "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
-        "$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        ", Print, exec, grimblast --notify --cursor --freeze copy area"
+        "$mainMod, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        ", Print, exec, grimblast --notify --freeze copy area"
 
         # switch focus
         "$mainMod, H, movefocus, l"
@@ -231,19 +231,19 @@
 
       # windowrule
       windowrule = [
-        "tile,Aseprite"
+        # "tile,Aseprite"
 
-        "float,imv"
-        "center,imv"
-        "size 1200 725,imv"
+        # "float,imv"
+        # "center,imv"
+        # "size 1200 725,imv"
 
-        "idleinhibit focus,mpv"
-        "float,mpv"
-        "center,mpv"
-        "size 1200 725,mpv"
+        # "idleinhibit focus,mpv"
+        # "float,mpv"
+        # "center,mpv"
+        # "size 1200 725,mpv"
 
-        "float,audacious"
-        "workspace 8 silent, audacious"
+        # "float,audacious"
+        # "workspace 8 silent, audacious"
 
         "workspace 9 silent, title:Telegram"
 
@@ -251,9 +251,9 @@
         # "float,wofi"
         # "noborder,wofi"
 
-        "tile, neovide"
+        # "tile, neovide"
 
-        "float,udiskie"
+        # "float,udiskie"
 
         "float,title:^(Transmission)$"
 
