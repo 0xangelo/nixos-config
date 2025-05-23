@@ -1,4 +1,4 @@
-{ host, ...}:
+{ host, lib, ...}:
 {
   programs.zsh = {
     enable = true;
@@ -9,7 +9,7 @@
       enable = true;
       plugins = [ "git" "vi-mode" "fzf" ];
     };
-    initExtraFirst = ''
+    initContent = lib.mkBefore ''
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
       export KEYTIMEOUT=1
