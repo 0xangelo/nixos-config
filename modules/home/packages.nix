@@ -7,6 +7,7 @@
     bitwise                           # cli tool for bit / hex manipulation
     brave                             # browser
     curl
+    delta                             # Syntax-highlighting pager for Git
     dooit                             # An awesome TUI todo manager
     evince                            # gnome pdf viewer
     eza                               # ls replacement

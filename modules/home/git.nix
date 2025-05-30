@@ -26,11 +26,26 @@ in
       signByDefault = true;
     };
 
+    # For the `delta` bits:
+    # https://github.com/dandavison/delta?tab=readme-ov-file#get-started
     extraConfig = { 
       init.defaultBranch = "main";
       # credential.helper = "store";
       core = {
+        pager = "delta";
         sshCommand = "ssh -i ~/.ssh/id_ed25519";
+      };
+
+      interactive = {
+        diffFilter = "delta --color-only";
+      };
+
+      delta = {
+        navigate = true;
+      };
+
+      merge = {
+        conflictstyle = "zdiff3";
       };
 
       pretty = {
