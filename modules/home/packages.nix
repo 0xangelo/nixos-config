@@ -26,6 +26,7 @@
     jinja2-cli                        # To render ".j2" files (templates)
     libreoffice
     lsof                              # Lists open files and the corresponding processes
+    mprocs                            # TUI tool to run multiple commands in parallel and show the output of each command separately
     nemo-with-extensions              # file manager
     ncspot                            # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     nitch                             # systhem fetch util
