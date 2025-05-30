@@ -40,6 +40,7 @@
     tldr                              # simplified man pages
     todo                              # cli todo list
     toipe                             # typing test in the terminal
+    tokei                             # Count your code, quickly
     tree                              # list contents of directories in a tree-like format
     valgrind                          # c memory analyzer
     yarn                              # Fast, reliable, and secure dependency management for javascript
