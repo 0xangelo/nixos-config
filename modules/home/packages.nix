@@ -26,6 +26,7 @@
     libreoffice
     lsof                              # Lists open files and the corresponding processes
     nemo-with-extensions              # file manager
+    ncspot                            # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     nitch                             # systhem fetch util
     nodejs                            # Event-driven I/O framework for the V8 JavaScript engine
     prismlauncher                     # minecraft launcher
