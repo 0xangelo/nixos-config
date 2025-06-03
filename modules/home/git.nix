@@ -18,8 +18,8 @@ in
 	  aliases = { 
 	    blame-deep = "blame -w -C -C -C";
 	  };
-    userName = "unmaykr (aftermath)";
-    userEmail = "98741738+unmaykr-aftermath@users.noreply.github.com";
+    userName = "Angelo Gregorio Lovatto (GitHub)";
+    userEmail = "12701614+0xangelo@users.noreply.github.com";
     
     signing = {
       key = null;
