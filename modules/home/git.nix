@@ -33,7 +33,7 @@ in
       # credential.helper = "store";
       core = {
         pager = "delta";
-        sshCommand = "ssh -i ~/.ssh/id_ed25519";
+        sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
       };
 
       interactive = {
