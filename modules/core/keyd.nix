@@ -7,6 +7,7 @@
     keyboards.default.settings = {
       main = {
         capslock = "overload(meta, esc)";
+        esc = "overload(meta, esc)";
       };
     };
   };
