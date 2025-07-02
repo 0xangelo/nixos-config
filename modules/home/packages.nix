@@ -31,6 +31,7 @@
     ncspot                            # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     nitch                             # systhem fetch util
     nodejs                            # Event-driven I/O framework for the V8 JavaScript engine
+    presenterm                        # Terminal based slideshow tool
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     silicon                           # Create beautiful image of your source code
