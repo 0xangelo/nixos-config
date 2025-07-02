@@ -81,6 +81,7 @@
     # Rust development
     bacon
     cmake
+    just                              # Handy way to save and run project-specific commands
     pkg-config                        # metainformation about installed libraries
     rustup
 
