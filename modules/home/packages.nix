@@ -31,8 +31,6 @@
     ncspot                            # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     nitch                             # systhem fetch util
     nodejs                            # Event-driven I/O framework for the V8 JavaScript engine
-    mermaid-cli                       # Generation of diagrams from text in a similar manner as markdown
-    presenterm                        # Terminal based slideshow tool
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     silicon                           # Create beautiful image of your source code
@@ -54,6 +52,13 @@
     zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
+
+    # Presentations
+    mermaid-cli                       # Generation of diagrams from text in a similar manner as markdown
+    pandoc                            # Conversion between documentation formats
+    presenterm                        # Terminal based slideshow tool
+    typst                             # New markup-based typesetting system that is powerful and easy to learn
+    python313Packages.weasyprint      # Converts web documents to PDF
 
     # Git
     gitbutler
