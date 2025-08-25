@@ -18,15 +18,11 @@
       # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
 
       # Utils
-      c = "clear";
       cd = "z";
       tt = "gtrash put";
       cat = "bat --plain";
       nano = "micro";
-      py = "python";
       icat = "kitten icat";
-      dsize = "du -hs";
-      findw = "grep -rl";
       pdf = "tdf";
       open = "xdg-open";
 
@@ -62,9 +58,8 @@
       gcoe = "git config user.email";
       gcon = "git config user.name";
 
-      # python
-      piv = "python -m venv .venv";
-      psv = "source .venv/bin/activate";
+      # Emoji
+      emoj = "emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | clipcopy";
     };
   };
 
