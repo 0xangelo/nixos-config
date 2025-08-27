@@ -39,6 +39,7 @@
     soundwireserver                   # pass audio to android phone
     tdf                               # cli pdf viewer
     telegram-desktop
+    termshot                          # Terminal screenshotter
     tldr                              # simplified man pages
     todo                              # cli todo list
     toipe                             # typing test in the terminal
