@@ -137,7 +137,7 @@
         "$mainMod SHIFT, D, exec, passmenu-wrapped"
         "$mainMod, Escape, exec, loginctl lock-session"
         "$mainMod SHIFT, Escape, exec, shutdown-script"
-        "$mainMod, P, pseudo,"
+        # "$mainMod, P, pseudo,"
         "$mainMod, T, togglesplit,"
         "$mainMod SHIFT, T, exec, hyprctl dispatch exec '[workspace 9 silent] telegram-desktop'"
         "$mainMod, E, exec, nemo"
@@ -149,8 +149,10 @@
         "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
-        "$mainMod, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        ", Print, exec, grimblast --notify --freeze copy area"
+        "$mainMod SHIFT, P, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        "$mainMod, P, exec, grimblast --notify --freeze copy area"
+        # "$mainMod, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        # ", Print, exec, grimblast --notify --freeze copy area"
 
         # switch focus
         "$mainMod, H, movefocus, l"
