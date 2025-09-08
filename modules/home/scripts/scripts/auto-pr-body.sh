@@ -18,6 +18,3 @@ case $yn in
       ;;
     * ) echo "Please answer yes or no.";;
 esac
-
-rm "$tmpfile"
-
