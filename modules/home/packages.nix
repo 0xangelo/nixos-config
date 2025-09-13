@@ -49,6 +49,7 @@
     yarn                              # Fast, reliable, and secure dependency management for javascript
     yazi                              # terminal file manager
     yt-dlp                            # YouTube downloader
+    yubikey-manager
     zenity
     zip                               # Compressor/archiver for creating and modifying zipfiles
     winetricks
@@ -89,6 +90,8 @@
     # Rust development
     bacon
     cmake
+    fontconfig                        # For plotters
+    freetype                          # For plotters
     just                              # Handy way to save and run project-specific commands
     pkg-config                        # metainformation about installed libraries
     rustup
