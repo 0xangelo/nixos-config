@@ -4,11 +4,9 @@
     age                               # Modern encryption tool with small explicit keys
     bc                                # is a mathematics language used for the dropdown calculator.
     bitwarden-cli
-    bitwise                           # cli tool for bit / hex manipulation
     brave                             # browser
     curl
     delta                             # Syntax-highlighting pager for Git
-    dooit                             # An awesome TUI todo manager
     evince                            # gnome pdf viewer
     eza                               # ls replacement
     entr                              # perform action when file change
@@ -41,10 +39,8 @@
     telegram-desktop
     termshot                          # Terminal screenshotter
     tldr                              # simplified man pages
-    todo                              # cli todo list
     toipe                             # typing test in the terminal
     tokei                             # Count your code, quickly
-    tree                              # list contents of directories in a tree-like format
     valgrind                          # c memory analyzer
     yarn                              # Fast, reliable, and secure dependency management for javascript
     yazi                              # terminal file manager
