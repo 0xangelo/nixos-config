@@ -41,22 +41,11 @@ in
     "hyprland/workspaces"= {
         active-only= false;
         disable-scroll= true;
-        format = "{icon}";
         on-click= "activate";
         format-icons= {
-            "1"= "󰖟";
-            "2"= "";
-            "8"= "";
-            "9"= "";
-            "10"= "󰙯";
             urgent= "";
             default = "";
             sort-by-number= true;
-        };
-        persistent-workspaces = {
-            "1"= [];
-            "2"= [];
-            "9"= [];
         };
     };
     memory= {
