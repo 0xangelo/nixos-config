@@ -1,8 +1,6 @@
-{ ... }: 
-{
+{...}: {
   wayland.windowManager.hyprland = {
     settings = {
-      
       # autostart
       exec-once = [
         "systemctl --user import-environment &"
@@ -22,7 +20,7 @@
 
       input = {
         kb_layout = "us";
-        kb_options ="caps:escape"; 
+        kb_options = "caps:escape";
         repeat_rate = 50;
         repeat_delay = 200;
         numlock_by_default = true;
@@ -309,7 +307,6 @@
 
         "noborder, onworkspace:w[t1]"
       ];
-
     };
 
     extraConfig = "

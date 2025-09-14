@@ -1,9 +1,11 @@
-{ pkgs, config, ... }:
-
 {
-  home.packages = (with pkgs; [
+  pkgs,
+  config,
+  ...
+}: {
+  home.packages = with pkgs; [
     pass-wayland
-  ]);
+  ];
 
   programs.password-store = {
     enable = true;

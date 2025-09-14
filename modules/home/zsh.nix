@@ -1,5 +1,8 @@
-{ host, lib, ...}:
 {
+  host,
+  lib,
+  ...
+}: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -7,7 +10,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "vi-mode" "fzf" ];
+      plugins = ["git" "vi-mode" "fzf"];
     };
     # https://nixos.wiki/wiki/Development_environment_with_nix-shell#direnv
     initContent = lib.mkBefore ''
@@ -41,21 +44,21 @@
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
       # Git
-      ga   = "git add";
-      gaa  = "git add --all";
-      gs   = "git status";
-      gb   = "git branch";
-      gm   = "git merge";
-      gpl  = "git pull";
+      ga = "git add";
+      gaa = "git add --all";
+      gs = "git status";
+      gb = "git branch";
+      gm = "git merge";
+      gpl = "git pull";
       gplo = "git pull origin";
-      gps  = "git push";
+      gps = "git push";
       gpst = "git push --follow-tags";
       gpso = "git push origin";
-      gc   = "git commit";
-      gcm  = "git commit -m";
+      gc = "git commit";
+      gcm = "git commit -m";
       gcma = "git add --all && git commit -m";
       gtag = "git tag -ma";
-      gch  = "git checkout";
+      gch = "git checkout";
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";

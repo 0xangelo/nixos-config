@@ -7,20 +7,20 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
-  
+
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-  
+
     alejandra.url = "github:kamadorueda/alejandra/3.0.0";
-  
+
     nix-gaming.url = "github:fufexan/nix-gaming";
-  
+
     hyprland = {
       type = "git";
       url = "https://github.com/hyprwm/Hyprland";
       submodules = true;
     };
-  
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -40,8 +40,13 @@
     };
   };
 
-  outputs = { sops-nix, nixos-hardware, nixpkgs, self, ...} @ inputs:
-  let
+  outputs = {
+    sops-nix,
+    nixos-hardware,
+    nixpkgs,
+    self,
+    ...
+  } @ inputs: let
     selfPkgs = import ./pkgs;
     username = "doom";
     system = "x86_64-linux";
@@ -50,30 +55,38 @@
       config.allowUnfree = true;
     };
     lib = nixpkgs.lib;
-  in
-  {
+  in {
     overlays.default = selfPkgs.overlay;
     nixosConfigurations = {
       desktop = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/desktop) ];
-        specialArgs = { host="desktop"; inherit self inputs username ; };
+        modules = [(import ./hosts/desktop)];
+        specialArgs = {
+          host = "desktop";
+          inherit self inputs username;
+        };
       };
 
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ 
+        modules = [
           (import ./hosts/laptop)
           nixos-hardware.nixosModules.framework-16-7040-amd
           sops-nix.nixosModules.sops
         ];
-        specialArgs = { host="laptop"; inherit self inputs username ; };
+        specialArgs = {
+          host = "laptop";
+          inherit self inputs username;
+        };
       };
 
       vm = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/vm) ];
-        specialArgs = { host="vm"; inherit self inputs username ; };
+        modules = [(import ./hosts/vm)];
+        specialArgs = {
+          host = "vm";
+          inherit self inputs username;
+        };
       };
     };
   };

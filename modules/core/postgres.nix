@@ -1,13 +1,15 @@
-{ lib, pkgs, ... }:
-
 {
+  lib,
+  pkgs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     postgresql
   ];
 
   services.postgresql = {
     enable = false;
-    ensureDatabases = [ "playground" ];
+    ensureDatabases = ["playground"];
     # https://github.com/NixOS/nixpkgs/issues/1735#issuecomment-1691191070
     authentication = pkgs.lib.mkOverride 10 ''
       local all all              trust
@@ -24,4 +26,3 @@
     };
   };
 }
-

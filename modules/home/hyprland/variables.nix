@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   home.sessionVariables = {
     EDITOR = "nvim";
     PATH = "$PATH:$HOME/.cargo/bin";

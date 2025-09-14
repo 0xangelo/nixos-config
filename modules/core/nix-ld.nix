@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   # Automatically creates a loader in /lib/* to avoid patching stuff
   # To disable it temporarily use
   # unset NIX_LD
@@ -14,6 +13,5 @@
       # (pkgs.runCommand "steamrun-lib" {} "mkdir $out; ln -s ${pkgs.steam-run.fhsenv}/usr/lib64 $out/lib")
       libpq
     ];
-  };  
-
+  };
 }

@@ -1,5 +1,8 @@
-{ pkgs, config, ... }: 
 {
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
     ./../../modules/core
@@ -13,10 +16,10 @@
     cpupower-gui
     powertop
   ];
-  
-  services = {    
+
+  services = {
     power-profiles-daemon.enable = true;
- 
+
     upower = {
       enable = true;
       percentageLow = 20;

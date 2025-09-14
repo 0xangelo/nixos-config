@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   fonts.fontconfig.enable = true;
   home.packages = [
     pkgs.nerd-fonts.jetbrains-mono
@@ -31,7 +30,7 @@
       size = 22;
     };
   };
-  
+
   home.pointerCursor = {
     name = "Nordzy-cursors";
     package = pkgs.nordzy-cursor-theme;

@@ -1,26 +1,24 @@
-{ pkgs, ... }: let
+{pkgs, ...}: let
   personalCfg = {
     user = {
       name = "Angelo Gregorio Lovatto (GitHub)";
       email = "12701614+0xangelo@users.noreply.github.com";
-	  };
+    };
 
-	  core = {
+    core = {
       sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
     };
   };
-in
-{
+in {
   programs.git = {
     enable = true;
-    
 
-	  aliases = { 
-	    blame-deep = "blame -w -C -C -C";
-	  };
+    aliases = {
+      blame-deep = "blame -w -C -C -C";
+    };
     userName = "Angelo Gregorio Lovatto (GitHub)";
     userEmail = "12701614+0xangelo@users.noreply.github.com";
-    
+
     signing = {
       key = null;
       signByDefault = true;
@@ -28,7 +26,7 @@ in
 
     # For the `delta` bits:
     # https://github.com/dandavison/delta?tab=readme-ov-file#get-started
-    extraConfig = { 
+    extraConfig = {
       init.defaultBranch = "main";
       # credential.helper = "store";
       core = {
@@ -86,7 +84,7 @@ in
     };
   };
 
-  home.packages = (with pkgs; [
+  home.packages = with pkgs; [
     gh
-  ]);
+  ];
 }
