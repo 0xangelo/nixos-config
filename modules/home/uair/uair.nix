@@ -1,7 +1,6 @@
-{ username, ... }:
-# NOTE: use manually installed binary until https://github.com/metent/uair/pull/23 is addressed
+{ pkgs, ... }:
 {
-  # home.packages = (with pkgs; [ uair ]);
+  home.packages = (with pkgs; [ uair ]);
   xdg.configFile."uair/uair.toml".source = ./uair.toml;
 
   systemd.user.services = {
@@ -11,8 +10,7 @@
       };
       Service = {
         Type = "simple";
-        # ExecStart = "${pkgs.uair}/bin/uair -q";
-        ExecStart = "/home/${username}/.cargo/bin/uair -q";
+        ExecStart = "${pkgs.uair}/bin/uair -q";
         Restart = "always";
       };
       Install = {
