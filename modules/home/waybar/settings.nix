@@ -12,13 +12,13 @@ in {
     modules-left = [
       "custom/launcher"
       "hyprland/workspaces"
+      "tray"
     ];
     modules-center = [
       "custom/uair"
       "clock"
     ];
     modules-right = [
-      "tray"
       "cpu"
       "memory"
       "disk"
@@ -50,16 +50,19 @@ in {
       format = "󰟜 {}%";
       format-alt = "󰟜 {used} GiB"; # 
       interval = 2;
+      on-click-right = "hyprctl dispatch exec '[float; center; size 950 650] kitty --override font_size=14 --title float_kitty btop'";
     };
     cpu = {
       format = "  {usage}%";
       format-alt = "  {avg_frequency} GHz";
       interval = 2;
+      on-click-right = "hyprctl dispatch exec '[float; center; size 950 650] kitty --override font_size=14 --title float_kitty btop'";
     };
     disk = {
       # path = "/";
       format = "󰋊 {percentage_used}%";
       interval = 60;
+      on-click-right = "hyprctl dispatch exec '[float; center; size 950 650] kitty --override font_size=14 --title float_kitty btop'";
     };
     network = {
       format-wifi = "  {signalStrength}%";
@@ -80,6 +83,7 @@ in {
       };
       scroll-step = 5;
       on-click = "pamixer -t";
+      on-click-right = "pavucontrol";
     };
     battery = {
       format = "{icon} {capacity}%";
