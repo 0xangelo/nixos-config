@@ -1,6 +1,6 @@
-{ username, ... }:
+{ pkgs, ... }:
 let
-  uairctl = "/home/${username}/.cargo/bin/uairctl";
+  uairctl = "${pkgs.uair}/bin/uairctl";
 in
 {
   programs.waybar.settings.mainBar = {
@@ -131,7 +131,6 @@ in
         on-click = "${uairctl} toggle";
         on-click-middle = "${uairctl} prev";
         on-click-right = "${uairctl} next";
-        exec-if = "which ${uairctl}";
         exec = "${uairctl} fetch '{\"text\":\"{state} {name} {time}\"}'";
     };
   };
