@@ -10,6 +10,4 @@
       max-cache-ttl = 34560000;
     };
   };
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = [];
 }
