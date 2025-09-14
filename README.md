@@ -59,7 +59,6 @@ OLD (EXPAND)
 -   [modules](modules) 🍱 modularized NixOS configurations
     -   [core](modules/core/) ⚙️ Core NixOS configuration
     -   [homes](modules/home/) 🏠 my [Home-Manager](https://github.com/nix-community/home-manager) config
--   [pkgs](flake/pkgs) 📦 packages exported by my flake
 -   [wallpapers](wallpapers/) 🌄 wallpapers collection
 
 ### 📓 Components

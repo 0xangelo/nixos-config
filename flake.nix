@@ -47,11 +47,9 @@
     self,
     ...
   } @ inputs: let
-    selfPkgs = import ./pkgs;
     username = "doom";
     system = "x86_64-linux";
   in {
-    overlays.default = selfPkgs.overlay;
     nixosConfigurations = {
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
