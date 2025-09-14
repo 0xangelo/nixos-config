@@ -1,6 +1,6 @@
 { ... }: {
   imports =
-    [(import ./audacious/audacious.nix)]       # music player
+    [(import ./audacious/audacious.nix)]          # music player
     ++ [(import ./bat.nix)]                       # better cat command
     ++ [(import ./btop.nix)]                      # resouces monitor 
     ++ [(import ./discord.nix)]                   # discord with catppuccin theme
@@ -17,7 +17,7 @@
     ++ [(import ./packages.nix)]                  # other packages
     ++ [(import ./password_store.nix)]            # GNU password store
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
-    ++ [(import ./sops)]                      # secrets manager
+    ++ [(import ./sops)]                          # secrets manager
     ++ [(import ./starship.nix)]                  # shell prompt
     # ++ [(import ./swaylock.nix)]                  # lock screen
     ++ [(import ./uair/uair.nix)]                 # Extensible pomodoro timer
