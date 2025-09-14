@@ -17,20 +17,13 @@
 
   show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
 
-  vm-start = pkgs.writeScriptBin "vm-start" (builtins.readFile ./scripts/vm-start.sh);
-
   ascii = pkgs.writeScriptBin "ascii" (builtins.readFile ./scripts/ascii.sh);
 
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
 
-  bw-cache = pkgs.writeShellScriptBin "bw-cache" (builtins.readFile ./scripts/bw-cache.sh);
-  bw-unlock = pkgs.writeShellScriptBin "bw-unlock" (builtins.readFile ./scripts/bw-unlock.sh);
-
   passmenu-wrapped = pkgs.writeShellScriptBin "passmenu-wrapped" (builtins.readFile ./scripts/passmenu-wrapped.sh);
-
-  rename-sui-address = pkgs.writeShellScriptBin "rename-sui-address" (builtins.readFile ./scripts/rename-sui-address.sh);
 
   auto-pr-body = pkgs.writeShellScriptBin "auto-pr-body" (builtins.readFile ./scripts/auto-pr-body.sh);
 
@@ -59,20 +52,13 @@ in {
 
     show-keybinds
 
-    vm-start
-
     ascii
 
     record
 
     repo-clone
 
-    bw-cache
-    bw-unlock
-
     passmenu-wrapped
-
-    rename-sui-address
 
     auto-pr-body
 
