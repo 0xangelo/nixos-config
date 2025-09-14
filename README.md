@@ -55,7 +55,6 @@ OLD (EXPAND)
 
 -   [flake.nix](flake.nix) base of the configuration
 -   [hosts](hosts) 🌳 per-host configurations that contain machine specific configurations
-    - [desktop](hosts/desktop/) 🖥️ Desktop specific configuration
     - [laptop](hosts/laptop/) 💻 Laptop specific configuration
 -   [modules](modules) 🍱 modularized NixOS configurations
     -   [core](modules/core/) ⚙️ Core NixOS configuration

@@ -50,23 +50,9 @@
     selfPkgs = import ./pkgs;
     username = "doom";
     system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-      config.allowUnfree = true;
-    };
-    lib = nixpkgs.lib;
   in {
     overlays.default = selfPkgs.overlay;
     nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [(import ./hosts/desktop)];
-        specialArgs = {
-          host = "desktop";
-          inherit self inputs username;
-        };
-      };
-
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
@@ -76,15 +62,6 @@
         ];
         specialArgs = {
           host = "laptop";
-          inherit self inputs username;
-        };
-      };
-
-      vm = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [(import ./hosts/vm)];
-        specialArgs = {
-          host = "vm";
           inherit self inputs username;
         };
       };
