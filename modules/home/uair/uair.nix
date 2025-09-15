@@ -9,7 +9,7 @@
       };
       Service = {
         Type = "simple";
-        ExecStart = "${pkgs.uair}/bin/uair -q";
+        ExecStart = "${pkgs.uair}/bin/uair";
         Restart = "always";
       };
       Install = {
