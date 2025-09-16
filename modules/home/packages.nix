@@ -4,7 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    age # Modern encryption tool with small explicit keys
     bc # is a mathematics language used for the dropdown calculator.
     brave # browser
     curl
@@ -29,7 +28,6 @@
     ripgrep # grep replacement
     silicon # Create beautiful image of your source code
     slack # Desktop client for Slack
-    sops # Simple and flexible tool for managing secrets
     soundwireserver # pass audio to android phone
     tdf # cli pdf viewer
     telegram-desktop
@@ -46,6 +44,10 @@
     zip # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
+
+    # Secrets with NixOS
+    age # Modern encryption tool with small explicit keys
+    sops # Simple and flexible tool for managing secrets
 
     # Presentations
     mermaid-cli # Generation of diagrams from text in a similar manner as markdown
