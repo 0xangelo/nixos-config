@@ -5,7 +5,6 @@
 }: {
   home.packages = with pkgs; [
     bc # is a mathematics language used for the dropdown calculator.
-    brave # browser
     curl
     evince # gnome pdf viewer
     eza # ls replacement
@@ -20,16 +19,13 @@
     libreoffice
     lsof # Lists open files and the corresponding processes
     mprocs # TUI tool to run multiple commands in parallel and show the output of each command separately
-    nemo-with-extensions # file manager
     ncspot # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     nitch # systhem fetch util
     nodejs # Event-driven I/O framework for the V8 JavaScript engine
     ripgrep # grep replacement
     silicon # Create beautiful image of your source code
-    slack # Desktop client for Slack
     soundwireserver # pass audio to android phone
     tdf # cli pdf viewer
-    telegram-desktop
     termshot # Terminal screenshotter
     tldr # simplified man pages
     toipe # typing test in the terminal
@@ -43,6 +39,12 @@
     zip # Compressor/archiver for creating and modifying zipfiles
     winetricks
     wineWowPackages.wayland
+
+    # Launchables
+    brave # browser
+    nemo-with-extensions # file manager
+    telegram-desktop
+    slack # Desktop client for Slack
 
     # Secrets with NixOS
     age # Modern encryption tool with small explicit keys
