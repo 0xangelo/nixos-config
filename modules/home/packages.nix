@@ -6,7 +6,6 @@
   home.packages = with pkgs; [
     bc # is a mathematics language used for the dropdown calculator.
     curl
-    evince # gnome pdf viewer
     eza # ls replacement
     entr # perform action when file change
     fd # find replacement
@@ -44,9 +43,10 @@
 
     # Launchables
     brave # browser
+    evince # gnome pdf viewer
     nemo-with-extensions # file manager
-    telegram-desktop
     slack # Desktop client for Slack
+    telegram-desktop
 
     # Secrets with NixOS
     age # Modern encryption tool with small explicit keys
