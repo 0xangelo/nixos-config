@@ -43,7 +43,7 @@
     winetricks
     wineWowPackages.wayland
 
-    # Launchables
+    # GUIs
     brave # browser
     evince # gnome pdf viewer
     nemo-with-extensions # file manager
