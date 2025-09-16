@@ -9,7 +9,6 @@
     bitwarden-cli
     brave # browser
     curl
-    delta # Syntax-highlighting pager for Git
     evince # gnome pdf viewer
     eza # ls replacement
     entr # perform action when file change
@@ -60,6 +59,7 @@
     python313Packages.weasyprint # Converts web documents to PDF
 
     # Git
+    delta # Syntax-highlighting pager for Git
     gitbutler
     lazygit
     nix-prefetch-github
