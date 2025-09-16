@@ -37,6 +37,8 @@
     yubikey-manager
     zenity
     zip # Compressor/archiver for creating and modifying zipfiles
+
+    # Wine (gaming)
     winetricks
     wineWowPackages.wayland
 
