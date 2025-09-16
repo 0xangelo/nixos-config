@@ -16,6 +16,7 @@
     gtrash # rm replacement, put deleted files in system trash
     jdk17 # java
     jq # Lightweight and flexible command-line JSON processor
+    lazydocker # A terminal UI for managing Docker containers, images, volumes, and more.
     libreoffice
     lsof # Lists open files and the corresponding processes
     mprocs # TUI tool to run multiple commands in parallel and show the output of each command separately
