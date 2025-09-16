@@ -21,7 +21,7 @@
     lsof # Lists open files and the corresponding processes
     mprocs # TUI tool to run multiple commands in parallel and show the output of each command separately
     ncspot # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
-    nitch # systhem fetch util
+    fastfetch # Actively maintained, feature-rich and performance oriented, neofetch like system information tool
     nodejs # Event-driven I/O framework for the V8 JavaScript engine
     ripgrep # grep replacement
     silicon # Create beautiful image of your source code
