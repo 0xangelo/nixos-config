@@ -4,6 +4,7 @@
   ...
 }: {
   home.packages = with pkgs; [
+    # TUIs
     bc # is a mathematics language used for the dropdown calculator.
     curl
     eza # ls replacement
@@ -34,7 +35,6 @@
     yazi # terminal file manager
     yt-dlp # YouTube downloader
     yubikey-manager
-    zenity # Display dialogs from the command-line/shell scripts.
     zip # Compressor/archiver for creating and modifying zipfiles
 
     # Wine (gaming)
@@ -116,6 +116,7 @@
     wget
     xdg-utils
     xxd
+    zenity # Display dialogs from the command-line/shell scripts.
     inputs.alejandra.defaultPackage.${system}
   ];
 }
