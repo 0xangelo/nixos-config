@@ -34,7 +34,7 @@
     yazi # terminal file manager
     yt-dlp # YouTube downloader
     yubikey-manager
-    zenity
+    zenity # Display dialogs from the command-line/shell scripts.
     zip # Compressor/archiver for creating and modifying zipfiles
 
     # Wine (gaming)
