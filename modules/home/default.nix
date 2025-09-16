@@ -3,6 +3,7 @@
     ./audacious/audacious.nix # music player
     ./bat.nix # better cat command
     ./btop.nix # resouces monitor
+    ./direnv.nix
     ./discord.nix # discord with catppuccin theme
     ./fuzzel.nix # launcher
     ./gaming.nix # packages related to gaming

@@ -12,12 +12,10 @@
       enable = true;
       plugins = ["git" "vi-mode" "fzf"];
     };
-    # https://nixos.wiki/wiki/Development_environment_with_nix-shell#direnv
     initContent = lib.mkBefore ''
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
       export KEYTIMEOUT=1
-      eval "$(direnv hook zsh)"
     '';
     shellAliases = {
       # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
