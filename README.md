@@ -49,7 +49,6 @@ Utils (EXPAND)
 - ```tt```    $\rightarrow$ ```gtrash put```
 - ```vim```   $\rightarrow$ ```nvim```
 - ```cat```   $\rightarrow$ ```bat```
-- ```nano```  $\rightarrow$ ```micro```
 - ```icat```  $\rightarrow$ ```kitten icat```
 - ```dsize``` $\rightarrow$ ```du -hs```
 - ```findw``` $\rightarrow$ ```grep -rl```

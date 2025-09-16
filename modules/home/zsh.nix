@@ -24,7 +24,6 @@
       cd = "z";
       tt = "gtrash put";
       cat = "bat --plain";
-      nano = "micro";
       icat = "kitten icat";
       pdf = "tdf";
       open = "xdg-open";
