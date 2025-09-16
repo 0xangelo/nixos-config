@@ -13,7 +13,6 @@
     fd # find replacement
     file # Show file information
     fzf # fuzzy finder
-    glow # Render markdown on the CLI, with pizzazz!
     gimp
     gtrash # rm replacement, put deleted files in system trash
     jdk17 # java
