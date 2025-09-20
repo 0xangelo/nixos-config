@@ -1,7 +1,7 @@
 {pkgs, ...}: {
-  home.packages = with pkgs; [
-    neovide # neovim gui in rust
-  ];
-
-  xdg.configFile."neovide".text = '''';
+  programs.neovide = {
+    enable = true;
+    package = pkgs.neovide;
+    settings = {};
+  };
 }
