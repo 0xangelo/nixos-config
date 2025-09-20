@@ -257,20 +257,7 @@ A brief walkthrough of what the install script does.
 
 # 👥 Credits
 
-Other dotfiles that I learned / copy from:
-
-- Nix Flakes
-  - [nomadics9/NixOS-Flake](https://github.com/nomadics9/NixOS-Flake): This is where I start my nixos / hyprland journey.
-  - [samiulbasirfahim/Flakes](https://github.com/samiulbasirfahim/Flakes): General flake / files structure
-  - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar (old design)
-  - [skiletro/nixfiles](https://github.com/skiletro/nixfiles): Vscodium config (that prevent it to crash)
-  - [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
-
-- README
-  - [ryan4yin/nix-config](https://github.com/ryan4yin/nix-config)
-  - [NotAShelf/nyx](https://github.com/NotAShelf/nyx)
-  - [sioodmy/dotfiles](https://github.com/sioodmy/dotfiles)
-  - [Ruixi-rebirth/flakes](https://github.com/Ruixi-rebirth/flakes)
+[Frost-Phoenix/nixos-config](https://github.com/frost-Phoenix/nixos-config)
 
 <div align="right">
   <a href="#readme">Back to the Top</a>
