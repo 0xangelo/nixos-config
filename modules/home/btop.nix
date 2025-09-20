@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   programs.btop = {
     enable = true;
 
@@ -8,6 +8,4 @@
       update_ms = 500;
     };
   };
-
-  home.packages = with pkgs; [nvtopPackages.intel];
 }
