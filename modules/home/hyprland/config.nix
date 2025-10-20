@@ -137,6 +137,7 @@
         "$mainMod SHIFT, Escape, exec, shutdown-script"
         # "$mainMod, P, pseudo,"
         "$mainMod, T, togglesplit,"
+        "$mainMod, N, exec, swaync-client -t -sw"
         "$mainMod SHIFT, T, exec, hyprctl dispatch exec '[workspace 9 silent] telegram-desktop'"
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
