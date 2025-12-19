@@ -63,7 +63,6 @@
 
     # Git
     delta # Syntax-highlighting pager for Git
-    lazygit
     nix-prefetch-github
 
     # gRPC
