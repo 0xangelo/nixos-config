@@ -84,8 +84,14 @@ in {
     };
   };
 
+  programs.lazygit = {
+    enable = true;
+    # Only available >= 25.11
+    # enableZshIntegration = true;
+    settings.git.overrideGpg = true;
+  };
+
   home.packages = with pkgs; [
     gh
-    lazygit
   ];
 }
