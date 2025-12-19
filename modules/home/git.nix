@@ -90,8 +90,4 @@ in {
     # enableZshIntegration = true;
     settings.git.overrideGpg = true;
   };
-
-  home.packages = with pkgs; [
-    gh
-  ];
 }
