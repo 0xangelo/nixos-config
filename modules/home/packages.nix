@@ -63,7 +63,6 @@
 
     # Git
     delta # Syntax-highlighting pager for Git
-    gitbutler
     lazygit
     nix-prefetch-github
 
