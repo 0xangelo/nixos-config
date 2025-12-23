@@ -48,7 +48,8 @@ in {
 
       pretty = {
         # https://stackoverflow.com/a/33807182/7842251
-        PR = "format:- %h **%s**%n%w(0,2,2)%b";
+        # https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt-s
+        PR = "format:- **%s**%n%w(0,2,2)%b";
       };
       rerere.enabled = true;
 
