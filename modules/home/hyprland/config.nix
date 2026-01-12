@@ -138,7 +138,7 @@
         # "$mainMod, P, pseudo,"
         "$mainMod, T, togglesplit,"
         "$mainMod, N, exec, swaync-client -t -sw"
-        "$mainMod SHIFT, T, exec, hyprctl dispatch exec '[workspace 9 silent] telegram-desktop'"
+        "$mainMod SHIFT, T, exec, hyprctl dispatch exec '[workspace 11 silent] telegram-desktop'"
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "$mainMod, C, togglespecialworkspace, calculator"
@@ -246,7 +246,7 @@
         # "float,audacious"
         # "workspace 8 silent, audacious"
 
-        "workspace 9 silent, title:Telegram"
+        "workspace 11 silent, title:Telegram"
 
         # "pin,wofi"
         # "float,wofi"
