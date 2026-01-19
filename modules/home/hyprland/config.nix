@@ -32,7 +32,6 @@
       };
 
       general = {
-        "$mainMod" = "SUPER";
         layout = "dwindle";
         gaps_in = 0;
         gaps_out = 0;
@@ -118,90 +117,90 @@
 
       bind = [
         # show keybinds list
-        "$mainMod, F1, exec, show-keybinds"
+        "SUPER, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, kitty"
+        "SUPER, Return, exec, kitty"
         "ALT, Return, exec, kitty --title float_kitty"
-        "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] brave'"
-        "$mainMod, Q, killactive,"
-        "$mainMod, F, fullscreen, 0"
-        "$mainMod SHIFT, F, fullscreen, 1"
-        "$mainMod, Space, togglefloating,"
-        "$mainMod, D, exec, fuzzel"
+        "SUPER SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
+        "SUPER, B, exec, hyprctl dispatch exec '[workspace 1 silent] brave'"
+        "SUPER, Q, killactive,"
+        "SUPER, F, fullscreen, 0"
+        "SUPER SHIFT, F, fullscreen, 1"
+        "SUPER, Space, togglefloating,"
+        "SUPER, D, exec, fuzzel"
         # Might work as a login shell?
-        # "$mainMod SHIFT, D, exec, exec -l passmenu"
-        "$mainMod SHIFT, D, exec, passmenu-wrapped"
-        "$mainMod, Escape, exec, loginctl lock-session"
-        "$mainMod SHIFT, Escape, exec, shutdown-script"
-        # "$mainMod, P, pseudo,"
-        "$mainMod, T, togglesplit,"
-        "$mainMod, N, exec, swaync-client -t -sw"
-        "$mainMod SHIFT, T, exec, hyprctl dispatch exec '[workspace 11 silent] telegram-desktop'"
-        "$mainMod, E, exec, nemo"
-        "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
-        "$mainMod, C, togglespecialworkspace, calculator"
-        "$mainMod, S, togglespecialworkspace, slack"
-        "$mainMod SHIFT, C, exec, hyprpicker -a"
-        "$mainMod, W,exec, wallpaper-picker"
-        "$mainMod SHIFT, W, exec, vm-start"
+        # "SUPER SHIFT, D, exec, exec -l passmenu"
+        "SUPER SHIFT, D, exec, passmenu-wrapped"
+        "SUPER, Escape, exec, loginctl lock-session"
+        "SUPER SHIFT, Escape, exec, shutdown-script"
+        # "SUPER, P, pseudo,"
+        "SUPER, T, togglesplit,"
+        "SUPER, N, exec, swaync-client -t -sw"
+        "SUPER SHIFT, T, exec, hyprctl dispatch exec '[workspace 11 silent] telegram-desktop'"
+        "SUPER, E, exec, nemo"
+        "SUPER SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
+        "SUPER, C, togglespecialworkspace, calculator"
+        "SUPER, S, togglespecialworkspace, slack"
+        "SUPER SHIFT, C, exec, hyprpicker -a"
+        "SUPER, W,exec, wallpaper-picker"
+        "SUPER SHIFT, W, exec, vm-start"
 
         # screenshot
-        "$mainMod SHIFT, P, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        "$mainMod, P, exec, grimblast --notify --freeze copy area"
-        # "$mainMod, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        "SUPER SHIFT, P, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+        "SUPER, P, exec, grimblast --notify --freeze copy area"
+        # "SUPER, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
         # ", Print, exec, grimblast --notify --freeze copy area"
 
         # switch focus
-        "$mainMod, H, movefocus, l"
-        "$mainMod, L, movefocus, r"
-        "$mainMod, K, movefocus, u"
-        "$mainMod, J, movefocus, d"
+        "SUPER, H, movefocus, l"
+        "SUPER, L, movefocus, r"
+        "SUPER, K, movefocus, u"
+        "SUPER, J, movefocus, d"
 
         # switch workspace
-        "$mainMod, 1, workspace, 1"
-        "$mainMod, 2, workspace, 2"
-        "$mainMod, 3, workspace, 3"
-        "$mainMod, 4, workspace, 4"
-        "$mainMod, 5, workspace, 5"
-        "$mainMod, 6, workspace, 6"
-        "$mainMod, 7, workspace, 7"
-        "$mainMod, 8, workspace, 8"
-        "$mainMod, 9, workspace, 9"
-        "$mainMod, 0, workspace, 10"
-        "$mainMod, G, workspace, e-1"
-        "$mainMod, SEMICOLON, workspace, e+1"
-        "$mainMod, TAB, workspace, previous"
+        "SUPER, 1, workspace, 1"
+        "SUPER, 2, workspace, 2"
+        "SUPER, 3, workspace, 3"
+        "SUPER, 4, workspace, 4"
+        "SUPER, 5, workspace, 5"
+        "SUPER, 6, workspace, 6"
+        "SUPER, 7, workspace, 7"
+        "SUPER, 8, workspace, 8"
+        "SUPER, 9, workspace, 9"
+        "SUPER, 0, workspace, 10"
+        "SUPER, G, workspace, e-1"
+        "SUPER, SEMICOLON, workspace, e+1"
+        "SUPER, TAB, workspace, previous"
 
         # same as above, but switch to the workspace
-        "$mainMod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent
-        "$mainMod SHIFT, 2, movetoworkspacesilent, 2"
-        "$mainMod SHIFT, 3, movetoworkspacesilent, 3"
-        "$mainMod SHIFT, 4, movetoworkspacesilent, 4"
-        "$mainMod SHIFT, 5, movetoworkspacesilent, 5"
-        "$mainMod SHIFT, 6, movetoworkspacesilent, 6"
-        "$mainMod SHIFT, 7, movetoworkspacesilent, 7"
-        "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
-        "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
-        "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
-        "$mainMod CTRL, c, movetoworkspace, empty"
-        "$mainMod SHIFT, G, movetoworkspacesilent, -1"
-        "$mainMod SHIFT, SEMICOLON, movetoworkspacesilent, +1"
+        "SUPER SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent
+        "SUPER SHIFT, 2, movetoworkspacesilent, 2"
+        "SUPER SHIFT, 3, movetoworkspacesilent, 3"
+        "SUPER SHIFT, 4, movetoworkspacesilent, 4"
+        "SUPER SHIFT, 5, movetoworkspacesilent, 5"
+        "SUPER SHIFT, 6, movetoworkspacesilent, 6"
+        "SUPER SHIFT, 7, movetoworkspacesilent, 7"
+        "SUPER SHIFT, 8, movetoworkspacesilent, 8"
+        "SUPER SHIFT, 9, movetoworkspacesilent, 9"
+        "SUPER SHIFT, 0, movetoworkspacesilent, 10"
+        "SUPER CTRL, c, movetoworkspace, empty"
+        "SUPER SHIFT, G, movetoworkspacesilent, -1"
+        "SUPER SHIFT, SEMICOLON, movetoworkspacesilent, +1"
 
         # window control
-        "$mainMod SHIFT, H, movewindow, l"
-        "$mainMod SHIFT, L, movewindow, r"
-        "$mainMod SHIFT, K, movewindow, u"
-        "$mainMod SHIFT, J, movewindow, d"
-        "$mainMod CTRL, H, resizeactive, -80 0"
-        "$mainMod CTRL, L, resizeactive, 80 0"
-        "$mainMod CTRL, K, resizeactive, 0 -80"
-        "$mainMod CTRL, J, resizeactive, 0 80"
-        "$mainMod ALT, H, moveactive,  -80 0"
-        "$mainMod ALT, L, moveactive, 80 0"
-        "$mainMod ALT, K, moveactive, 0 -80"
-        "$mainMod ALT, J, moveactive, 0 80"
+        "SUPER SHIFT, H, movewindow, l"
+        "SUPER SHIFT, L, movewindow, r"
+        "SUPER SHIFT, K, movewindow, u"
+        "SUPER SHIFT, J, movewindow, d"
+        "SUPER CTRL, H, resizeactive, -80 0"
+        "SUPER CTRL, L, resizeactive, 80 0"
+        "SUPER CTRL, K, resizeactive, 0 -80"
+        "SUPER CTRL, J, resizeactive, 0 80"
+        "SUPER ALT, H, moveactive,  -80 0"
+        "SUPER ALT, L, moveactive, 80 0"
+        "SUPER ALT, K, moveactive, 0 -80"
+        "SUPER ALT, J, moveactive, 0 80"
 
         # media and volume controls
         ",XF86AudioRaiseVolume,exec, pamixer -i 5"
@@ -211,23 +210,23 @@
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
         ",XF86AudioStop, exec, playerctl stop"
-        "$mainMod, mouse_down, workspace, e-1"
-        "$mainMod, mouse_up, workspace, e+1"
+        "SUPER, mouse_down, workspace, e-1"
+        "SUPER, mouse_up, workspace, e+1"
 
         # laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
-        "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
-        "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+        "SUPER, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
+        "SUPER, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
         # clipboard manager
-        "$mainMod, V, exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
+        "SUPER, V, exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
       ];
 
       # mouse binding
       bindm = [
-        "$mainMod, mouse:272, movewindow"
-        "$mainMod, mouse:273, resizewindow"
+        "SUPER, mouse:272, movewindow"
+        "SUPER, mouse:273, resizewindow"
       ];
 
       # windowrule
