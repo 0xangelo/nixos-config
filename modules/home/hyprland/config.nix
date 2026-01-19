@@ -259,6 +259,12 @@
         "match:title ^(Confirm to replace files)$,      float true"
         "match:title ^(File Operation Progress)$,       float true"
 
+        # No gaps when only
+        "border_size 0, match:float 0, match:workspace w[tv1]"
+        "rounding 0, match:float 0, match:workspace w[tv1]"
+        "border_size 0, match:float 0, match:workspace f[1]"
+        "rounding 0, match:float 0, match:workspace f[1]"
+
         # "opacity 0.0 override,class:^(xwaylandvideobridge)$"
         # "noanim,class:^(xwaylandvideobridge)$"
         # "noinitialfocus,class:^(xwaylandvideobridge)$"
