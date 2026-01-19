@@ -231,30 +231,7 @@
 
       # windowrule
       windowrule = [
-        # "tile,Aseprite"
-
-        # "float,imv"
-        # "center,imv"
-        # "size 1200 725,imv"
-
-        # "idleinhibit focus,mpv"
-        # "float,mpv"
-        # "center,mpv"
-        # "size 1200 725,mpv"
-
-        # "float,audacious"
-        # "workspace 8 silent, audacious"
-
         "workspace 11 silent, title:Telegram"
-
-        # "pin,wofi"
-        # "float,wofi"
-        # "noborder,wofi"
-
-        # "tile, neovide"
-
-        # "float,udiskie"
-
         "float,title:^(Transmission)$"
 
         "float,title:^(Firefox — Sharing Indicator)$"
