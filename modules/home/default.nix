@@ -11,6 +11,7 @@
     # ./gpg.nix # message signing
     ./gtk.nix # gtk theme
     ./hyprland # window manager
+    ./iota.nix # IOTA
     ./kitty.nix # terminal
     ./swaync/swaync.nix # notification deamon
     ./neovide.nix # simple graphical user interface for Neovim
