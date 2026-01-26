@@ -2,7 +2,6 @@
   home.sessionVariables = {
     EDITOR = "nvim";
     PATH = "$PATH:$HOME/.cargo/bin";
-    LIBCLANG_PATH = "${pkgs.llvmPackages.libclang.lib}/lib";
 
     # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
     NIXOS_OZONE_WL = "1";
