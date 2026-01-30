@@ -1,6 +1,6 @@
 {pkgs ? import <nixpkgs> {}}: let
   binary = "iota";
-  version = "1.12.0";
+  version = "1.16.0-alpha";
 in
   pkgs.stdenv.mkDerivation {
     pname = binary;
@@ -11,7 +11,8 @@ in
       stripRoot = false;
       url = "https://github.com/iotaledger/iota/releases/download/v${version}/iota-v${version}-linux-x86_64.tgz";
       # You MUST provide a hash for security and reproducibility
-      sha256 = "sha256-EZJy2WVijwYGmNxcLExBPy5u9QRJ5OcdoqCBMycm26w=";
+      # sha256 = pkgs.lib.fakeHash;
+      sha256 = "sha256-f0oWFmDAihmcYwz6Be9Glm/ms0O98tCU/ZXFOY/Z5Ag=";
     };
     # src = ./bin;
 
