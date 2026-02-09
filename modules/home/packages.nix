@@ -85,6 +85,8 @@
     # Python
     python3
 
+    helix
+
     # Rust development
     bacon
     cmake
