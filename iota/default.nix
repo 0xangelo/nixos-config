@@ -1,6 +1,6 @@
 {pkgs ? import <nixpkgs> {}}: let
   binary = "iota";
-  version = "1.16.0-alpha";
+  version = "1.16.2-rc";
 in
   pkgs.stdenv.mkDerivation {
     pname = binary;
@@ -12,9 +12,8 @@ in
       url = "https://github.com/iotaledger/iota/releases/download/v${version}/iota-v${version}-linux-x86_64.tgz";
       # You MUST provide a hash for security and reproducibility
       # sha256 = pkgs.lib.fakeHash;
-      sha256 = "sha256-f0oWFmDAihmcYwz6Be9Glm/ms0O98tCU/ZXFOY/Z5Ag=";
+      sha256 = "sha256-opS44N9GZ0lAlqSch56ORwMU+z4wJPhNYZdSb61Fg4c=";
     };
-    # src = ./bin;
 
     # 2. Add the hook to nativeBuildInputs
     nativeBuildInputs = [
