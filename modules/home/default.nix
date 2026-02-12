@@ -10,6 +10,7 @@
     ./git.nix # version control
     # ./gpg.nix # message signing
     ./gtk.nix # gtk theme
+    ./helix.nix # Helix code editor
     ./hyprland # window manager
     ./iota.nix # IOTA
     ./kitty.nix # terminal
