@@ -1,6 +1,7 @@
 {...}: {
   programs.helix = {
     enable = true;
+
     languages = {
       language-server.rust-analyzer.config = {
         check.command = "clippy";
@@ -29,6 +30,19 @@
           "tracing::instrument::WithSubscriber"
         ];
         rustfmt.extraArgs = ["+nightly-2025-10-29"];
+      };
+    };
+
+    settings = {
+      theme = "catppuccin_mocha";
+      editor = {
+        line-number = "relative";
+        lsp.display-messages = true;
+      };
+      keys.normal = {
+        space.w = ":w";
+        space.q = ":q";
+        esc = [ "collapse_selection" "keep_primary_selection" ];
       };
     };
   };
