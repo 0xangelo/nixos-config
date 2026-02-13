@@ -42,7 +42,6 @@
       keys.normal = {
         space.w = ":w";
         space.q = ":q";
-        esc = [ "collapse_selection" "keep_primary_selection" ];
         "C-g" = [
             ":write-all"
             ":new"
