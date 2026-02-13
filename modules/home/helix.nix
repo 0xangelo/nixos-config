@@ -34,7 +34,7 @@
     };
 
     settings = {
-      theme = "catppuccin_mocha";
+      theme = "catppuccin_macchiato";
       editor = {
         line-number = "relative";
         lsp.display-messages = true;
