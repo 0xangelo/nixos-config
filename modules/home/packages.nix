@@ -117,6 +117,6 @@
     xdg-utils
     xxd
     zenity # Display dialogs from the command-line/shell scripts.
-    inputs.alejandra.defaultPackage.${system}
+    inputs.alejandra.defaultPackage.${stdenv.hostPlatform.system}
   ];
 }
