@@ -13,31 +13,22 @@ in {
   programs.git = {
     enable = true;
 
-    aliases = {
-      blame-deep = "blame -w -C -C -C";
-    };
-    userName = "Angelo Gregorio Lovatto (GitHub)";
-    userEmail = "12701614+0xangelo@users.noreply.github.com";
+    settings = {
+      alias.blame-deep = "blame -w -C -C -C";
+      user.name = "Angelo Gregorio Lovatto (GitHub)";
+      user.email = "12701614+0xangelo@users.noreply.github.com";
 
-    signing = {
-      key = null;
-      signByDefault = true;
-    };
-
-    # For the `delta` bits:
-    # https://github.com/dandavison/delta?tab=readme-ov-file#get-started
-    extraConfig = {
       init.defaultBranch = "main";
-      # credential.helper = "store";
       core = {
         pager = "delta";
         sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
       };
 
+      # For the `delta` bits:
+      # https://github.com/dandavison/delta?tab=readme-ov-file#get-started
       interactive = {
         diffFilter = "delta --color-only";
       };
-
       delta = {
         navigate = true;
       };
@@ -58,8 +49,11 @@ in {
       branch.sort = "-committerdate";
 
       pager.branch = false;
+    };
 
-      gitbutler.signCommits = true;
+    signing = {
+      key = null;
+      signByDefault = true;
     };
 
     # https://seansantry.com/development/2022/12/14/split-git-nix/
@@ -77,7 +71,6 @@ in {
 
   programs.gh = {
     enable = true;
-    # extensions = with pkgs; [gh-markdown-preview];
     settings = {
       version = "1";
       git_protocol = "ssh";
