@@ -8,7 +8,10 @@
     nur.url = "github:nix-community/NUR";
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
+    alejandra = {
+      url = "github:kamadorueda/alejandra/4.0.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-gaming.url = "github:fufexan/nix-gaming";
 
     hyprland = {
