@@ -6,7 +6,6 @@
     ./direnv.nix
     ./discord.nix # discord with catppuccin theme
     ./fuzzel.nix # launcher
-    ./gaming.nix # packages related to gaming
     ./git.nix # version control
     # ./gpg.nix # message signing
     ./gtk.nix # gtk theme
