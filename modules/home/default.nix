@@ -23,7 +23,6 @@
     ./sops # secrets manager
     ./starship.nix # shell prompt
     ./uair/uair.nix # Extensible pomodoro timer
-    ./vscodium.nix # vscode forck
     ./waybar # status bar
     ./zsh.nix # shell
   ];
