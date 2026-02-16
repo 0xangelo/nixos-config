@@ -10,7 +10,7 @@
     # ./gpg.nix # message signing
     ./gtk.nix # gtk theme
     ./helix.nix # Helix code editor
-    ./hyprland # window manager
+    ./hyprland # Wayland compositor
     ./iota.nix # IOTA
     ./kitty.nix # terminal
     ./swaync/swaync.nix # notification deamon
