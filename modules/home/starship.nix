@@ -4,12 +4,9 @@
 
     enableBashIntegration = true;
     enableZshIntegration = true;
-    enableNushellIntegration = true;
 
     settings =
       {
-        # right_format = "$cmd_duration";
-
         directory = {
           format = "[ ](bold #89b4fa)[ $path ]($style)";
           style = "bold #b4befe";
@@ -26,14 +23,6 @@
           disabled = false;
           style = "bg:none fg:#161821";
         };
-
-        # directory.substitutions = {
-        # "~" = "󰋞";
-        # "Documents" = " ";
-        # "Downloads" = " ";
-        # "Music" = " ";
-        # "Pictures" = " ";
-        # };
 
         palette = "catppuccin_mocha";
       }
