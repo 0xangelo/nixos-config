@@ -129,9 +129,6 @@
         "SUPER SHIFT, F, fullscreen, 1"
         "SUPER, Space, togglefloating,"
         "SUPER, D, exec, fuzzel"
-        # Might work as a login shell?
-        # "SUPER SHIFT, D, exec, exec -l passmenu"
-        "SUPER SHIFT, D, exec, passmenu-wrapped"
         "SUPER, Escape, exec, loginctl lock-session"
         "SUPER SHIFT, Escape, exec, shutdown-script"
         # "SUPER, P, pseudo,"

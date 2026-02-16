@@ -23,8 +23,6 @@
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
 
-  passmenu-wrapped = pkgs.writeShellScriptBin "passmenu-wrapped" (builtins.readFile ./scripts/passmenu-wrapped.sh);
-
   auto-pr-body = pkgs.writeShellScriptBin "auto-pr-body" (builtins.readFile ./scripts/auto-pr-body.sh);
 
   download-gist = pkgs.writeShellScriptBin "download-gist" (builtins.readFile ./scripts/download-gist.sh);
@@ -57,8 +55,6 @@ in {
     record
 
     repo-clone
-
-    passmenu-wrapped
 
     auto-pr-body
 
