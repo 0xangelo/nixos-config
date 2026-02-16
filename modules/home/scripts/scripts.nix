@@ -17,8 +17,6 @@
 
   show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
 
-  ascii = pkgs.writeScriptBin "ascii" (builtins.readFile ./scripts/ascii.sh);
-
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
@@ -49,8 +47,6 @@ in {
     shutdown-script
 
     show-keybinds
-
-    ascii
 
     record
 
