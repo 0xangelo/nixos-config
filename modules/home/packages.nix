@@ -86,14 +86,6 @@
     # Python
     python3
 
-    # Rust development
-    bacon
-    cmake
-    fontconfig # For plotters
-    freetype # For plotters
-    just # Handy way to save and run project-specific commands
-    pkg-config # metainformation about installed libraries
-
     bleachbit # cache cleaner
     cmatrix
     gparted # partition manager
