@@ -14,6 +14,7 @@
     cargo-hack
     cargo-insta
     cargo-machete
+    cargo-nextest
     cargo-public-api
     cargo-rdme
     cargo-semver-checks
