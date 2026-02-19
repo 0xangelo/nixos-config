@@ -3,7 +3,7 @@
     [(import ./bootloader.nix)]
     ++ [(import ./docker.nix)]
     ++ [(import ./hardware.nix)]
-    ++ [(import ./keyd.nix)]
+    # ++ [(import ./keyd.nix)]
     ++ [(import ./nix-ld.nix)]
     ++ [(import ./xserver.nix)]
     ++ [(import ./network.nix)]
