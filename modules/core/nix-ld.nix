@@ -3,7 +3,7 @@
   # To disable it temporarily use
   # unset NIX_LD
   programs.nix-ld = {
-    enable = false;
+    enable = true;
     libraries = with pkgs; [
       ## Put here any library that is required when running a package
       ## ...
