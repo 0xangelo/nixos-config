@@ -1,5 +1,5 @@
 {
-  pkgs ? import <nixpkgs> { },
+  pkgs,
 }:
 let
   version = "1.16.2-rc";
