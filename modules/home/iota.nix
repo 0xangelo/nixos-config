@@ -1,5 +1,9 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
-    (callPackage ../../iota/default.nix {})
+{ pkgs, ... }:
+let
+  iota = (pkgs.callPackage ../../iota/default.nix { });
+in
+{
+  home.packages = [
+    iota.iota
   ];
 }

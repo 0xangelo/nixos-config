@@ -1,19 +1,24 @@
-{pkgs ? import <nixpkgs> {}}: let
+{
+  pkgs ? import <nixpkgs> { },
+}:
+let
   binary = "iota";
   version = "1.16.2-rc";
+  src = pkgs.fetchzip {
+    stripRoot = false;
+    url = "https://github.com/iotaledger/iota/releases/download/v${version}/iota-v${version}-linux-x86_64.tgz";
+    # You MUST provide a hash for security and reproducibility
+    # sha256 = pkgs.lib.fakeHash;
+    sha256 = "sha256-opS44N9GZ0lAlqSch56ORwMU+z4wJPhNYZdSb61Fg4c=";
+  };
 in
-  pkgs.stdenv.mkDerivation {
+{
+  iota = pkgs.stdenv.mkDerivation {
     pname = binary;
     version = version;
+    inherit src;
 
     # 1. Provide the source (could be a local file or a fetchurl)
-    src = pkgs.fetchzip {
-      stripRoot = false;
-      url = "https://github.com/iotaledger/iota/releases/download/v${version}/iota-v${version}-linux-x86_64.tgz";
-      # You MUST provide a hash for security and reproducibility
-      # sha256 = pkgs.lib.fakeHash;
-      sha256 = "sha256-opS44N9GZ0lAlqSch56ORwMU+z4wJPhNYZdSb61Fg4c=";
-    };
 
     # 2. Add the hook to nativeBuildInputs
     nativeBuildInputs = [
@@ -36,4 +41,5 @@ in
       cp ${binary} $out/bin/
       chmod +x $out/bin/${binary}
     '';
-  }
+  };
+}
