@@ -34,27 +34,30 @@
     };
   };
 
-  outputs = {
-    sops-nix,
-    nixos-hardware,
-    nixpkgs,
-    self,
-    ...
-  } @ inputs: let
-    username = "doom";
-    system = "x86_64-linux";
-  in {
-    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
-      inherit system;
-      modules = [
-        (import ./hosts/laptop)
-        nixos-hardware.nixosModules.framework-16-7040-amd
-        sops-nix.nixosModules.sops
-      ];
-      specialArgs = {
-        host = "laptop";
-        inherit self inputs username;
+  outputs =
+    {
+      sops-nix,
+      nixos-hardware,
+      nixpkgs,
+      self,
+      ...
+    }@inputs:
+    let
+      username = "doom";
+      system = "x86_64-linux";
+    in
+    {
+      nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          (import ./hosts/laptop)
+          nixos-hardware.nixosModules.framework-16-7040-amd
+          sops-nix.nixosModules.sops
+        ];
+        specialArgs = {
+          host = "laptop";
+          inherit self inputs username;
+        };
       };
     };
-  };
 }

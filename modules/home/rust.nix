@@ -1,5 +1,6 @@
 # Rust development
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
     bacon
     cmake
@@ -22,7 +23,6 @@
     cargo-udeps
     cargo-workspaces
     release-plz
-    rusty-man
     taplo
     tokio-console
   ];
