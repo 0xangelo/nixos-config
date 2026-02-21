@@ -5,5 +5,6 @@ in
 {
   home.packages = [
     iota.iota
+    iota.move-analyzer
   ];
 }

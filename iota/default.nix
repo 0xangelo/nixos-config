@@ -2,7 +2,6 @@
   pkgs ? import <nixpkgs> { },
 }:
 let
-  binary = "iota";
   version = "1.16.2-rc";
   src = pkgs.fetchzip {
     stripRoot = false;
@@ -13,12 +12,12 @@ let
   };
 in
 {
-  iota = pkgs.stdenv.mkDerivation {
-    pname = binary;
-    version = version;
-    inherit src;
+  iota = pkgs.stdenv.mkDerivation rec {
+    pname = "iota";
+    inherit version;
 
     # 1. Provide the source (could be a local file or a fetchurl)
+    inherit src;
 
     # 2. Add the hook to nativeBuildInputs
     nativeBuildInputs = [
@@ -38,8 +37,33 @@ in
 
     installPhase = ''
       mkdir -p $out/bin
-      cp ${binary} $out/bin/
-      chmod +x $out/bin/${binary}
+      cp ${pname} $out/bin/
+      chmod +x $out/bin/${pname}
     '';
   };
+
+  move-analyzer = pkgs.stdenv.mkDerivation rec {
+    pname = "move-analyzer";
+    inherit version;
+    # 1. Provide the source (could be a local file or a fetchurl)
+    inherit src;
+
+    # 2. Add the hook to nativeBuildInputs
+    nativeBuildInputs = [
+      pkgs.autoPatchelfHook
+    ];
+
+    # 3. Add the libraries the binary actually needs to run
+    # autoPatchelfHook will search through these
+    buildInputs = [
+      pkgs.libgcc
+    ];
+
+    installPhase = ''
+      mkdir -p $out/bin
+      cp ${pname} $out/bin/
+      chmod +x $out/bin/${pname}
+    '';
+  };
+
 }
