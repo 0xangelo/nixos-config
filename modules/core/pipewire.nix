@@ -1,5 +1,5 @@
-{pkgs, ...}: {
-  services.pulseaudio.enable = false;
+{ pkgs, ... }:
+{
   services.pipewire = {
     enable = true;
     alsa.enable = true;
