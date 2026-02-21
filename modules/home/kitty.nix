@@ -1,8 +1,9 @@
-{...}: {
+{ ... }:
+{
   programs.kitty = {
     enable = true;
 
-    themeFile = "Catppuccin-Mocha";
+    themeFile = "gruvbox-dark";
 
     font = {
       name = "JetBrainsMono Nerd Font";
@@ -16,6 +17,9 @@
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;
+      # https://github.com/kovidgoyal/kitty/discussions/5891#discussioncomment-9852692
+      allow_remote_control = "socket-only";
+      listen_on = "unix:/tmp/mykitty";
 
       ## Tabs
       tab_title_template = "{index}";
