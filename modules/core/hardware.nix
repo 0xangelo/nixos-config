@@ -1,9 +1,7 @@
-{...}: {
+{ ... }:
+{
   hardware = {
-    graphics = {
-      enable = true;
-      extraPackages = [];
-    };
+    enableRedistributableFirmware = true;
+    graphics.enable = true;
   };
-  hardware.enableRedistributableFirmware = true;
 }
