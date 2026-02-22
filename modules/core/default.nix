@@ -9,7 +9,6 @@
     (import ./xserver.nix)
     (import ./network.nix)
     (import ./pipewire.nix)
-    (import ./postgres.nix)
     (import ./program.nix)
     (import ./security.nix)
     (import ./services.nix)
