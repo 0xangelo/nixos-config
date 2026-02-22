@@ -2,11 +2,15 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   nix = {
     settings = {
       auto-optimise-store = true;
-      experimental-features = ["nix-command" "flakes"];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
     };
     gc = {
       automatic = true;
@@ -21,7 +25,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    cups # Standards-based printing system for UNIX
     wget
     git
   ];
