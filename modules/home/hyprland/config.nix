@@ -240,6 +240,7 @@
         # "float,class:^(zenity)$"
         # "center,class:^(zenity)$"
         # "size 850 500,class:^(zenity)$"
+        "match:class Slack,                             workspace special:slack silent, fullscreen true"
 
         "match:class ^(pavucontrol)$,                   float true"
         "match:class ^(SoundWireServer)$,               float true"
