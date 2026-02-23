@@ -1,8 +1,8 @@
 {
-  inputs,
   pkgs,
   ...
-}: {
+}:
+{
   programs.hyprland.enable = true;
   xdg.portal = {
     enable = true;
@@ -13,8 +13,4 @@
       pkgs.xdg-desktop-portal-gtk
     ];
   };
-
-  environment.systemPackages = with pkgs; [
-    # xwaylandvideobridge
-  ];
 }
