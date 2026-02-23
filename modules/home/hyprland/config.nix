@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   wayland.windowManager.hyprland = {
     settings = {
       # autostart
@@ -227,20 +228,12 @@
       ];
 
       windowrule = [
-        "match:title Telegram, workspace 11 silent"
-        "match:title ^(Transmission)$, float true"
-        "match:title ^(Volume Control)$, float true, size 700 450, move 40 55%"
-        "match:title float_kitty, float true, center true, size 950 600"
-        "match:title ^(Picture-in-Picture)$, float true, pin true, opacity 1.0 override 1.0 override,"
-        # "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
-        # "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
-        # "opacity 1.0 override 1.0 override, class:(Aseprite)"
-        # "opacity 1.0 override 1.0 override, class:(Unity)"
-        # "idleinhibit focus, class:^(mpv)$"
-        # "float,class:^(zenity)$"
-        # "center,class:^(zenity)$"
-        # "size 850 500,class:^(zenity)$"
+        "match:title Telegram,                          workspace 11 silent"
         "match:class Slack,                             workspace special:slack silent, fullscreen true"
+        "match:title ^(Transmission)$,                  float true"
+        "match:title ^(Volume Control)$,                float true, size 700 450, move 40 55%"
+        "match:title float_kitty,                       float true, center true, size 950 600"
+        "match:title ^(Picture-in-Picture)$,            float true, pin true, opacity 1.0 override 1.0 override,"
 
         "match:class ^(pavucontrol)$,                   float true"
         "match:class ^(SoundWireServer)$,               float true"
@@ -262,14 +255,6 @@
         "rounding 0, match:float 0, match:workspace w[tv1]"
         "border_size 0, match:float 0, match:workspace f[1]"
         "rounding 0, match:float 0, match:workspace f[1]"
-
-        # "opacity 0.0 override,class:^(xwaylandvideobridge)$"
-        # "noanim,class:^(xwaylandvideobridge)$"
-        # "noinitialfocus,class:^(xwaylandvideobridge)$"
-        # "maxsize 1 1,class:^(xwaylandvideobridge)$"
-        # "noblur,class:^(xwaylandvideobridge)$"
-        #
-        # "noborder, onworkspace:w[t1]"
       ];
     };
 
