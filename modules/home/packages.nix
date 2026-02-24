@@ -74,9 +74,6 @@
     # Go
     go
 
-    # Postgres
-    postgresql # Needed for building some diesel binaries?
-
     # Python
     python3
 
