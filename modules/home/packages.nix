@@ -98,7 +98,6 @@
     unzip
     wget
     xdg-utils
-    xxd
     zenity # Display dialogs from the command-line/shell scripts.
   ];
 }
