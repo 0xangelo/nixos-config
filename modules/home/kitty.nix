@@ -19,26 +19,9 @@
       # https://github.com/kovidgoyal/kitty/discussions/5891#discussioncomment-9852692
       allow_remote_control = "socket-only";
       listen_on = "unix:/tmp/mykitty";
-
-      ## Tabs
-      tab_title_template = "{index}";
-      active_tab_font_style = "normal";
-      inactive_tab_font_style = "normal";
-      tab_bar_style = "powerline";
-      tab_powerline_style = "round";
-      active_tab_foreground = "#1e1e2e";
-      active_tab_background = "#cba6f7";
-      inactive_tab_foreground = "#bac2de";
-      inactive_tab_background = "#313244";
     };
 
     keybindings = {
-      ## Tabs
-      "alt+1" = "goto_tab 1";
-      "alt+2" = "goto_tab 2";
-      "alt+3" = "goto_tab 3";
-      "alt+4" = "goto_tab 4";
-
       ## Clipboard
       "alt+c" = "copy_to_clipboard";
       "alt+v" = "paste_from_clipboard";
