@@ -20,6 +20,7 @@
     lazydocker # A terminal UI for managing Docker containers, images, volumes, and more.
     libreoffice
     lsof # Lists open files and the corresponding processes
+    lua-language-server # Language server that offers Lua language support
     mprocs # TUI tool to run multiple commands in parallel and show the output of each command separately
     ncspot # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     fastfetch # Actively maintained, feature-rich and performance oriented, neofetch like system information tool
