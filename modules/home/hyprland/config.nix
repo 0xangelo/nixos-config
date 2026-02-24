@@ -55,17 +55,11 @@
       };
 
       decoration = {
-        rounding = 0;
-
         blur = {
-          enabled = true;
           size = 1;
-          passes = 1;
           brightness = 1;
           contrast = 1.400;
-          ignore_opacity = true;
           noise = 0;
-          new_optimizations = true;
           xray = true;
         };
       };
