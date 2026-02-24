@@ -33,7 +33,6 @@
     toipe # typing test in the terminal
     tokei # Count your code, quickly
     xh # Friendly and fast tool for sending HTTP requests
-    yarn # Fast, reliable, and secure dependency management for javascript
     yazi # terminal file manager
     yt-dlp # YouTube downloader
     yubikey-manager
