@@ -1,4 +1,4 @@
-{pkgs, ...}: let
+_: let
   personalCfg = {
     user = {
       name = "Angelo Gregorio Lovatto (GitHub)";
@@ -80,8 +80,7 @@ in {
 
   programs.lazygit = {
     enable = true;
-    # Only available >= 25.11
-    # enableZshIntegration = true;
+    enableZshIntegration = true;
     settings.git.overrideGpg = true;
   };
 }
