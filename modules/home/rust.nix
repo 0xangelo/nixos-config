@@ -1,6 +1,5 @@
 # Rust development
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   home.packages = with pkgs; [
     bacon
     cmake

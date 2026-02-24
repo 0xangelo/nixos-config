@@ -1,7 +1,4 @@
-{
-  pkgs,
-}:
-let
+{pkgs}: let
   version = "1.16.2-rc";
   src = pkgs.fetchzip {
     stripRoot = false;
@@ -10,8 +7,7 @@ let
     # sha256 = pkgs.lib.fakeHash;
     sha256 = "sha256-opS44N9GZ0lAlqSch56ORwMU+z4wJPhNYZdSb61Fg4c=";
   };
-in
-{
+in {
   iota = pkgs.stdenv.mkDerivation rec {
     pname = "iota";
     inherit version;
@@ -65,5 +61,4 @@ in
       chmod +x $out/bin/${pname}
     '';
   };
-
 }

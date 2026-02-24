@@ -2,8 +2,7 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   nix = {
     settings = {
       auto-optimise-store = true;

@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   programs.dconf.enable = true; # TODO: remove?
   programs.zsh.enable = true;
   programs.gnupg.agent = {

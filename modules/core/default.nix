@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   imports = [
     (import ./bootloader.nix)
     (import ./docker.nix)
