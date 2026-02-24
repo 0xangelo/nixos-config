@@ -38,10 +38,6 @@
     yubikey-manager
     zip # Compressor/archiver for creating and modifying zipfiles
 
-    # Wine (gaming)
-    winetricks
-    wineWowPackages.wayland
-
     # GUIs
     brave # browser
     evince # gnome pdf viewer
