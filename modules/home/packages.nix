@@ -83,7 +83,7 @@
     ffmpeg
     imv # image viewer
     killall
-    libnotify
+    libnotify # Library that sends desktop notifications to a notification daemon
     man-pages # extra man pages
     mpv # video player
     ncdu # disk space
