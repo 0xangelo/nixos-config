@@ -4,7 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    # swww
     swaybg
     inputs.hypr-contrib.packages.${stdenv.hostPlatform.system}.grimblast
     hyprpicker
@@ -21,9 +20,7 @@
     enable = true;
     xwayland = {
       enable = true;
-      # hidpi = true;
     };
-    # enableNvidiaPatches = false;
     systemd.enable = true;
   };
 }
