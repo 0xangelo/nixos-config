@@ -16,7 +16,6 @@
     ./kitty.nix # terminal
     ./rust.nix # Rust development
     ./swaync/swaync.nix # notification deamon
-    # ./neovide.nix # simple graphical user interface for Neovim
     ./nvim.nix # neovim editor
     ./packages.nix # other packages
     ./password_store.nix # GNU password store
