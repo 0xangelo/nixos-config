@@ -18,8 +18,6 @@
       export KEYTIMEOUT=1
     '';
     shellAliases = {
-      # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
-
       # Utils
       cd = "z";
       tt = "gtrash put";
@@ -28,7 +26,7 @@
       pdf = "tdf";
       open = "xdg-open";
 
-      l = "eza --icons  -a --group-directories-first -1"; #EZA_ICON_SPACING=2
+      l = "eza --icons  -a --group-directories-first -1";
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
 
