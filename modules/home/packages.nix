@@ -32,7 +32,6 @@
     tldr # simplified man pages
     toipe # typing test in the terminal
     tokei # Count your code, quickly
-    valgrind # c memory analyzer
     xh # Friendly and fast tool for sending HTTP requests
     yarn # Fast, reliable, and secure dependency management for javascript
     yazi # terminal file manager
