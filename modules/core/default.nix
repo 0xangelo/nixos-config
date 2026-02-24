@@ -15,5 +15,6 @@
     (import ./system.nix)
     (import ./user.nix)
     (import ./wayland.nix)
+    (import ./nixd.nix)
   ];
 }
