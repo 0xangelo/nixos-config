@@ -19,11 +19,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    catppuccin-starship = {
-      url = "github:catppuccin/starship";
-      flake = false;
-    };
   };
 
   outputs = {
