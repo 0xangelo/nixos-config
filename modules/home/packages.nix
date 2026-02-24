@@ -1,11 +1,11 @@
 {
-  inputs,
   lib,
   pkgs,
   ...
 }: {
   home.packages = with pkgs; [
     # TUIs
+    alejandra
     bc # is a mathematics language used for the dropdown calculator.
     curl
     eza # ls replacement
@@ -111,6 +111,5 @@
     xdg-utils
     xxd
     zenity # Display dialogs from the command-line/shell scripts.
-    inputs.alejandra.defaultPackage.${stdenv.hostPlatform.system}
   ];
 }

@@ -1,14 +1,9 @@
-{
-  inputs,
-  pkgs,
-  ...
-}:
-{
+{pkgs, ...}: {
   programs.neovim = {
     enable = true;
     vimAlias = true;
     extraPackages = with pkgs; [
-      inputs.alejandra.defaultPackage.${stdenv.hostPlatform.system}
+      alejandra
       taplo
       nil # Yet another language server for Nix
     ];

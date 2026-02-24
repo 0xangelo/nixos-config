@@ -8,10 +8,6 @@
     nur.url = "github:nix-community/NUR";
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-    alejandra = {
-      url = "github:kamadorueda/alejandra/4.0.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     hyprland = {
       type = "git";
@@ -30,30 +26,27 @@
     };
   };
 
-  outputs =
-    {
-      sops-nix,
-      nixos-hardware,
-      nixpkgs,
-      self,
-      ...
-    }@inputs:
-    let
-      username = "doom";
-      system = "x86_64-linux";
-    in
-    {
-      nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [
-          (import ./hosts/laptop)
-          nixos-hardware.nixosModules.framework-16-7040-amd
-          sops-nix.nixosModules.sops
-        ];
-        specialArgs = {
-          host = "laptop";
-          inherit self inputs username;
-        };
+  outputs = {
+    sops-nix,
+    nixos-hardware,
+    nixpkgs,
+    self,
+    ...
+  } @ inputs: let
+    username = "doom";
+    system = "x86_64-linux";
+  in {
+    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+      inherit system;
+      modules = [
+        (import ./hosts/laptop)
+        nixos-hardware.nixosModules.framework-16-7040-amd
+        sops-nix.nixosModules.sops
+      ];
+      specialArgs = {
+        host = "laptop";
+        inherit self inputs username;
       };
     };
+  };
 }
