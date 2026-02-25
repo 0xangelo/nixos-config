@@ -8,7 +8,6 @@
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "nm-applet &"
         "wl-clip-persist --clipboard both"
-        "hyprctl setcursor Nordzy-cursors 22 &"
         "poweralertd &"
         "noctalia-shell &"
         "wl-paste --watch cliphist store &"
