@@ -2,16 +2,8 @@
   programs.kitty = {
     enable = true;
 
-    themeFile = "gruvbox-dark";
-
-    font = {
-      name = "JetBrainsMono Nerd Font";
-      size = 10;
-    };
-
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = "1";
       window_padding_width = 10;
       scrollback_lines = 10000;
       enable_audio_bell = false;

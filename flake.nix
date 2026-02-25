@@ -31,6 +31,7 @@
     nixos-hardware,
     nixpkgs,
     self,
+    stylix,
     ...
   } @ inputs: let
     username = "doom";
@@ -39,9 +40,10 @@
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        (import ./hosts/laptop)
         nixos-hardware.nixosModules.framework-16-7040-amd
         sops-nix.nixosModules.sops
+        stylix.nixosModules.stylix
+        (import ./hosts/laptop)
       ];
       specialArgs = {
         host = "laptop";

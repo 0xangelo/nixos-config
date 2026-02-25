@@ -7,4 +7,6 @@
       taplo
     ];
   };
+  # To avoid Stylix overriding AstroNvim's init.lua
+  stylix.targets.neovim.enable = false;
 }
