@@ -14,7 +14,8 @@
     ./iota.nix # IOTA
     ./kitty.nix # terminal
     ./rust.nix # Rust development
-    ./swaync/swaync.nix # notification deamon
+    # ./swaync/swaync.nix # notification deamon
+    ./noctalia # Noctalia shell
     ./nvim.nix # neovim editor
     ./packages.nix # other packages
     ./password_store.nix # GNU password store
@@ -22,7 +23,7 @@
     ./sops # secrets manager
     ./starship.nix # shell prompt
     ./uair/uair.nix # Extensible pomodoro timer
-    ./waybar # status bar
+    # ./waybar # status bar
     ./zsh.nix # shell
   ];
 

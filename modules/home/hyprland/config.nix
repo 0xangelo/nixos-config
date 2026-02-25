@@ -11,7 +11,7 @@
         "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
         "hyprctl setcursor Nordzy-cursors 22 &"
         "poweralertd &"
-        "waybar &"
+        "noctalia-shell &"
         "wl-paste --watch cliphist store &"
         "hyprlock"
         "hypridle"
@@ -33,8 +33,8 @@
 
       general = {
         layout = "dwindle";
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 5;
+        gaps_out = 10;
         border_size = 2;
       };
 
@@ -55,12 +55,21 @@
       };
 
       decoration = {
+        rounding = 20;
+        rounding_power = 2;
+
+        shadow = {
+          enabled = true;
+          range = 4;
+          render_power = 3;
+          # color = rgba(1a1a1aee);
+        };
+
         blur = {
-          size = 1;
-          brightness = 1;
-          contrast = 1.400;
-          noise = 0;
-          xray = true;
+          enabled = true;
+          size = 3;
+          passes = 2;
+          vibrancy = 0.1696;
         };
       };
 
@@ -201,6 +210,16 @@
       bindm = [
         "SUPER, mouse:272, movewindow"
         "SUPER, mouse:273, resizewindow"
+      ];
+
+      layerrule = [
+        {
+          name = "noctalia";
+          "match:namespace" = "noctalia-background-.*$";
+          ignore_alpha = 0.5;
+          blur = true;
+          blur_popups = true;
+        }
       ];
 
       windowrule = [
