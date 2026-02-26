@@ -105,6 +105,7 @@
         "SUPER, comma, exec, noctalia-shell ipc call settings toggle"
         "SUPER SHIFT, B, exec, noctalia-shell ipc call bar toggle"
         "SUPER, V, exec, noctalia-shell ipc call launcher clipboard"
+        "SUPER, Escape, exec, noctalia-shell ipc call sessionMenu toggle"
 
         # show keybinds list
         "SUPER, F1, exec, show-keybinds"
@@ -117,8 +118,6 @@
         "SUPER, Q, killactive,"
         "SUPER, F, fullscreen, 0"
         "SUPER SHIFT, F, fullscreen, 1"
-        "SUPER, Escape, exec, loginctl lock-session"
-        "SUPER SHIFT, Escape, exec, shutdown-script"
         "SUPER, T, togglesplit,"
         "SUPER, N, exec, swaync-client -t -sw"
         "SUPER SHIFT, T, exec, hyprctl dispatch exec '[workspace 11 silent] telegram-desktop'"
