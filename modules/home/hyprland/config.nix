@@ -99,11 +99,12 @@
       #   "command": "record gif & ; swaync-client -t"
       #   "command": "record stop"
       bind = [
-        # Noctalia shell: core binds
+        # Noctalia shell
         "SUPER, D, exec, noctalia-shell ipc call launcher toggle"
         "SUPER SHIFT, S, exec, noctalia-shell ipc call controlCenter toggle"
         "SUPER, comma, exec, noctalia-shell ipc call settings toggle"
         "SUPER SHIFT, B, exec, noctalia-shell ipc call bar toggle"
+        "SUPER, V, exec, noctalia-shell ipc call launcher clipboard"
 
         # show keybinds list
         "SUPER, F1, exec, show-keybinds"
