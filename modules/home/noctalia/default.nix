@@ -9,6 +9,9 @@
       appLauncher = {
         enableClipboardHistory = true;
       };
+      sessionMenu = {
+        countdownDuration = 5000;
+      };
     };
   };
 }
