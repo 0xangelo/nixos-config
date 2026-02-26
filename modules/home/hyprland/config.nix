@@ -98,6 +98,12 @@
       };
 
       bind = [
+        # Noctalia shell: core binds
+        "SUPER, D, exec, noctalia-shell ipc call launcher toggle"
+        "SUPER SHIFT, S, exec, noctalia-shell ipc call controlCenter toggle"
+        "SUPER, comma, exec, noctalia-shell ipc call settings toggle"
+        "SUPER SHIFT, B, exec, noctalia-shell ipc call bar toggle"
+
         # show keybinds list
         "SUPER, F1, exec, show-keybinds"
 
@@ -109,16 +115,12 @@
         "SUPER, Q, killactive,"
         "SUPER, F, fullscreen, 0"
         "SUPER SHIFT, F, fullscreen, 1"
-        "SUPER, Space, togglefloating,"
-        "SUPER, D, exec, fuzzel"
         "SUPER, Escape, exec, loginctl lock-session"
         "SUPER SHIFT, Escape, exec, shutdown-script"
-        # "SUPER, P, pseudo,"
         "SUPER, T, togglesplit,"
         "SUPER, N, exec, swaync-client -t -sw"
         "SUPER SHIFT, T, exec, hyprctl dispatch exec '[workspace 11 silent] telegram-desktop'"
         "SUPER, E, exec, nemo"
-        "SUPER SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "SUPER, C, togglespecialworkspace, calculator"
         "SUPER, S, togglespecialworkspace, slack"
         "SUPER SHIFT, C, exec, hyprpicker -a"
@@ -249,12 +251,12 @@
       ];
     };
 
-    extraConfig = "
+    extraConfig = ''
       monitor=,preferred,auto,auto
 
       xwayland {
         force_zero_scaling = true
       }
-    ";
+    '';
   };
 }
