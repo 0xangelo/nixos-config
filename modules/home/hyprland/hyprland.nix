@@ -1,11 +1,7 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     swaybg
-    inputs.hypr-contrib.packages.${stdenv.hostPlatform.system}.grimblast
+    grimblast
     hyprpicker
     grim
     slurp
