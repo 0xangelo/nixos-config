@@ -3,10 +3,8 @@
     settings = {
       # autostart
       exec-once = [
-        "wl-clip-persist --clipboard both"
         "poweralertd &"
         "noctalia-shell &"
-        "wl-paste --watch cliphist store &"
         "hyprlock"
         "hypridle"
         "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty bc --quiet'"
@@ -202,9 +200,6 @@
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "SUPER, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
         "SUPER, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
-
-        # clipboard manager
-        "SUPER, V, exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
       ];
 
       # mouse binding
