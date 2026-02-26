@@ -4,8 +4,8 @@
       # autostart
       exec-once = [
         "noctalia-shell --no-duplicate"
-        "poweralertd &"
         "hyprlock"
+        "poweralertd &"
         "hypridle"
         "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty bc --quiet'"
       ];
