@@ -3,8 +3,6 @@
     settings = {
       # autostart
       exec-once = [
-        "hash dbus-update-activation-environment 2>/dev/null &"
-        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "wl-clip-persist --clipboard both"
         "poweralertd &"
         "noctalia-shell &"
