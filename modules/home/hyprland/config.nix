@@ -5,7 +5,6 @@
       exec-once = [
         "hash dbus-update-activation-environment 2>/dev/null &"
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
-        "nm-applet &"
         "wl-clip-persist --clipboard both"
         "poweralertd &"
         "noctalia-shell &"
