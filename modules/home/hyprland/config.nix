@@ -95,6 +95,11 @@
         ];
       };
 
+      # TODO: binds for
+      #   "command": "record screen & ; swaync-client -t"
+      #   "command": "record area & ; swaync-client -t"
+      #   "command": "record gif & ; swaync-client -t"
+      #   "command": "record stop"
       bind = [
         # Noctalia shell: core binds
         "SUPER, D, exec, noctalia-shell ipc call launcher toggle"
