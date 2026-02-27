@@ -36,11 +36,9 @@
 
     icons = {
       enable = true;
-      dark = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "lavender";
-      };
+      dark = "Gruvbox-Plus-Dark";
+      light = "Gruvbox-Plus-Light";
+      package = pkgs.gruvbox-plus-icons;
     };
 
     image = ../../wallpapers/otherWallpaper/nixos/gruvbox-dark-blue.png;
