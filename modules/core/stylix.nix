@@ -43,6 +43,8 @@
 
     image = ../../wallpapers/otherWallpaper/nixos/gruvbox-dark-blue.png;
 
+    opacity.desktop = 0.5;
+
     polarity = "dark";
   };
 }
