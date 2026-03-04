@@ -16,6 +16,7 @@
     gimp
     gtrash # rm replacement, put deleted files in system trash
     hyprls # LSP server for Hyprland's configuration language
+    hyprpaper # Blazing fast wayland wallpaper utility
     jq # Lightweight and flexible command-line JSON processor
     lazydocker # A terminal UI for managing Docker containers, images, volumes, and more.
     libreoffice
