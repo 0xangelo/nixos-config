@@ -219,7 +219,7 @@
 
       windowrule = [
         "match:title Telegram,                          workspace 11 silent"
-        "match:class Slack,                             workspace special:slack silent, fullscreen true"
+        "match:class Slack,                             workspace special:slack silent"
         "match:title ^(Transmission)$,                  float true"
         "match:title ^(Volume Control)$,                float true, size 700 450, move 40 55%"
         "match:title float_kitty,                       float true, center true, size 950 600"
