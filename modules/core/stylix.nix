@@ -41,7 +41,7 @@
       package = pkgs.gruvbox-plus-icons;
     };
 
-    image = ../../wallpapers/otherWallpaper/nixos/gruvbox-dark-blue.png;
+    image = ../../wallpapers/otherWallpaper/gruvbox/train.webp;
 
     opacity = {
       desktop = 0.5;
