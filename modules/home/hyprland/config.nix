@@ -240,11 +240,17 @@
         "match:title ^(Confirm to replace files)$,      float true"
         "match:title ^(File Operation Progress)$,       float true"
 
-        # No gaps when only
+        # Smart gaps: https://wiki.hypr.land/Configuring/Workspace-Rules/#smart-gaps
         "border_size 0, match:float 0, match:workspace w[tv1]"
         "rounding 0, match:float 0, match:workspace w[tv1]"
         "border_size 0, match:float 0, match:workspace f[1]"
         "rounding 0, match:float 0, match:workspace f[1]"
+      ];
+
+      # Smart gaps: https://wiki.hypr.land/Configuring/Workspace-Rules/#smart-gaps
+      workspace = [
+        "w[tv1], gapsout:0, gapsin:0"
+        "f[1], gapsout:0, gapsin:0"
       ];
     };
 
