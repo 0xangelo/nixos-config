@@ -182,6 +182,7 @@
         "SUPER ALT, L, moveactive, 80 0"
         "SUPER ALT, K, moveactive, 0 -80"
         "SUPER ALT, J, moveactive, 0 80"
+        "SUPER, Space, togglefloating,"
 
         # media and volume controls
         ",XF86AudioRaiseVolume,exec, pamixer -i 5"
