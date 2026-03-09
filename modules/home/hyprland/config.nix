@@ -7,7 +7,7 @@
         "hyprlock"
         "poweralertd &"
         "hypridle"
-        "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty bc --quiet'"
+        "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty -o background_opacity=0.5 bc --quiet'"
       ];
 
       input = {
@@ -223,7 +223,7 @@
         "match:class Slack,                             workspace special:slack silent"
         "match:title ^(Transmission)$,                  float true"
         "match:title ^(Volume Control)$,                float true, size 700 450, move 40 55%"
-        "match:title float_kitty,                       float true, center true, size 800 400, opacity 0.5, no_blur true"
+        "match:title float_kitty,                       float true, center true, size 800 400, no_blur true"
         "match:title ^(Picture-in-Picture)$,            float true, pin true, opacity 1.0 override 1.0 override,"
 
         "match:class ^(pavucontrol)$,                   float true"
