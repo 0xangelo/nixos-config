@@ -1,11 +1,11 @@
 {pkgs}: let
-  version = "1.18.1-rc";
+  version = "1.16.2-rc";
   src = pkgs.fetchzip {
     stripRoot = false;
     url = "https://github.com/iotaledger/iota/releases/download/v${version}/iota-v${version}-linux-x86_64.tgz";
     # You MUST provide a hash for security and reproducibility
     # sha256 = pkgs.lib.fakeHash;
-    sha256 = "sha256-OGjGVj1hv4uB/ChwCGi0ZkEIn4BRZpX7H+vw8l6V9HU=";
+    sha256 = "sha256-opS44N9GZ0lAlqSch56ORwMU+z4wJPhNYZdSb61Fg4c=";
   };
 in {
   iota = pkgs.stdenv.mkDerivation rec {
