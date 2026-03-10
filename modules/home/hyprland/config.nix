@@ -255,6 +255,8 @@
         "w[tv1], gapsout:0, gapsin:0"
         "f[1], gapsout:0, gapsin:0"
 
+        "2, layout:scrolling"
+        "4, layout:scrolling"
         "special:slack, layout:scrolling"
       ];
     };
