@@ -127,7 +127,6 @@
         "SUPER, C, togglespecialworkspace, calculator"
         "SUPER, S, togglespecialworkspace, slack"
         "SUPER SHIFT, C, exec, hyprpicker -a"
-        "SUPER, W,exec, wallpaper-picker"
         "SUPER SHIFT, W, exec, vm-start"
 
         # screenshot
