@@ -42,6 +42,10 @@
         preserve_split = "yes";
       };
 
+      scrolling = {
+        column_width = 0.8;
+      };
+
       master = {
         new_status = "master";
       };
