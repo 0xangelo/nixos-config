@@ -43,7 +43,7 @@
       };
 
       scrolling = {
-        column_width = 0.8;
+        column_width = 0.75;
       };
 
       master = {
