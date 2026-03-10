@@ -250,10 +250,12 @@
         "rounding 0, match:float 0, match:workspace f[1]"
       ];
 
-      # Smart gaps: https://wiki.hypr.land/Configuring/Workspace-Rules/#smart-gaps
       workspace = [
+        # Smart gaps: https://wiki.hypr.land/Configuring/Workspace-Rules/#smart-gaps
         "w[tv1], gapsout:0, gapsin:0"
         "f[1], gapsout:0, gapsin:0"
+
+        "special:slack, layout:scrolling"
       ];
     };
 
