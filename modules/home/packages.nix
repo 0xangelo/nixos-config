@@ -59,7 +59,6 @@
     python313Packages.weasyprint # Converts web documents to PDF
 
     # Git
-    delta # Syntax-highlighting pager for Git
     nix-prefetch-github
 
     # gRPC

@@ -1,4 +1,4 @@
-_: let
+{pkgs, ...}: let
   personalCfg = {
     user = {
       name = "Angelo Gregorio Lovatto (GitHub)";
@@ -19,23 +19,9 @@ in {
       user.email = "12701614+0xangelo@users.noreply.github.com";
 
       init.defaultBranch = "main";
-      core = {
-        pager = "delta";
-        sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
-      };
+      core.sshCommand = "ssh -i ~/.ssh/0xangelo_ed25519";
 
-      # For the `delta` bits:
-      # https://github.com/dandavison/delta?tab=readme-ov-file#get-started
-      interactive = {
-        diffFilter = "delta --color-only";
-      };
-      delta = {
-        navigate = true;
-      };
-
-      merge = {
-        conflictstyle = "zdiff3";
-      };
+      merge.conflictstyle = "zdiff3";
 
       pretty = {
         # https://stackoverflow.com/a/33807182/7842251
@@ -69,6 +55,14 @@ in {
     ];
   };
 
+  programs.delta = {
+    enable = true;
+    enableGitIntegration = true;
+    options = {
+      navigate = true;
+    };
+  };
+
   programs.gh = {
     enable = true;
     settings = {
@@ -78,7 +72,12 @@ in {
     };
   };
 
-  programs.gh-dash.enable = true;
+  programs.gh-dash = {
+    enable = true;
+    settings.pager.diff = "diffnav";
+  };
+
+  home.packages = with pkgs; [diffnav];
 
   programs.lazygit = {
     enable = true;
