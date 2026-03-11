@@ -29,7 +29,6 @@
           "tracing::instrument::Instrument"
           "tracing::instrument::WithSubscriber"
         ];
-        rustfmt.extraArgs = ["+nightly-2025-10-29"];
       };
     };
 
