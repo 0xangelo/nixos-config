@@ -36,6 +36,7 @@
       editor = {
         line-number = "relative";
         lsp.display-messages = true;
+        soft-wrap.enable = true;
       };
       keys.normal = {
         space.w = ":w";
