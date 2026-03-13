@@ -5,6 +5,7 @@
     sops-nix.url = "github:Mic92/sops-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-less685.url = "github:NixOS/nixpkgs/9d93b7bb76eeb01802106502a31a44364a1fffbd";
     nur.url = "github:nix-community/NUR";
 
     home-manager = {
@@ -27,6 +28,7 @@
     sops-nix,
     nixos-hardware,
     nixpkgs,
+    nixpkgs-less685,
     self,
     stylix,
     ...
@@ -37,6 +39,13 @@
     nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
+        {
+          nixpkgs.overlays = [
+            (final: prev: {
+              less = (import nixpkgs-less685 {inherit (prev) system;}).pkgs.less;
+            })
+          ];
+        }
         nixos-hardware.nixosModules.framework-16-7040-amd
         sops-nix.nixosModules.sops
         stylix.nixosModules.stylix
