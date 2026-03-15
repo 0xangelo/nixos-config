@@ -16,6 +16,7 @@
     ./rust.nix # Rust development
     ./noctalia # Noctalia shell
     ./nvim.nix # neovim editor
+    ./opencode.nix
     ./packages.nix # other packages
     ./password_store.nix # GNU password store
     ./scripts/scripts.nix # personal scripts
