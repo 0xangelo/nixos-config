@@ -74,7 +74,18 @@ in {
 
   programs.gh-dash = {
     enable = true;
-    settings.pager.diff = "diffnav";
+    settings = {
+      pager.diff = "diffnav";
+      keybindings.prs = [
+        {
+          key = "C";
+          name = "code review";
+          command = ''
+            nvim -c ":silent Octo pr edit {{.PrNumber}}"
+          '';
+        }
+      ];
+    };
   };
 
   home.packages = with pkgs; [diffnav];
