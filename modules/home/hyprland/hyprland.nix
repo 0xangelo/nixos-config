@@ -3,8 +3,6 @@
     swaybg
     grimblast
     hyprpicker
-    grim
-    slurp
     wl-clip-persist
     wf-recorder
     glib
