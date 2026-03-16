@@ -12,6 +12,8 @@
       sessionMenu = {
         countdownDuration = 5000;
       };
+
+      general.lockScreenCountdownDuration = 5000;
     };
   };
 }
