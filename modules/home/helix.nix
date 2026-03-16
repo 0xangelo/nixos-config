@@ -61,7 +61,7 @@
           name = "move";
           source = {
             git = "https://github.com/0xangelo/tree-sitter-move";
-            rev = "f7a40b1fdd588311b575cbc4d40291c0a5062f49";
+            rev = "db672ea85db56442dc2df5ce5a9a6b994a8cfe67";
           };
         }
       ];
