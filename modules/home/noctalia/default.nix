@@ -14,6 +14,21 @@
       };
 
       general.lockScreenCountdownDuration = 5000;
+
+      idle = {
+        enabled = true;
+        screenOffTimeout = 120;
+        lockTimeout = 150;
+        suspendTimeout = 360;
+        fadeDuration = 5;
+        screenOffCommand = "";
+        lockCommand = "";
+        suspendCommand = "";
+        resumeScreenOffCommand = "";
+        resumeLockCommand = "";
+        resumeSuspendCommand = "";
+        customCommands = "[]";
+      };
     };
   };
 }
