@@ -23,6 +23,7 @@
     ./sops # secrets manager
     ./starship.nix # shell prompt
     ./tmux.nix
+    ./tree-sitter
     ./uair/uair.nix # Extensible pomodoro timer
     ./zsh.nix # shell
   ];
