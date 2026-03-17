@@ -12,5 +12,6 @@
       # DARWIN_USER_TEMP_DIR) on darwin.
       path = "%r/test.txt";
     };
+    secrets.email.path = "%r/email.txt";
   };
 }
