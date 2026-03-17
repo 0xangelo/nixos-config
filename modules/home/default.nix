@@ -13,6 +13,7 @@
     ./hyprland # Wayland compositor
     ./iota.nix # IOTA
     ./kitty.nix # terminal
+    ./rbw.nix
     ./rust.nix # Rust development
     ./noctalia # Noctalia shell
     ./nvim.nix # neovim editor
