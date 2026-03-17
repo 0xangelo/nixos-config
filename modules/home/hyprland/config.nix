@@ -127,6 +127,7 @@
         "SUPER, S, togglespecialworkspace, slack"
         "SUPER SHIFT, C, exec, hyprpicker -a"
         "SUPER SHIFT, W, exec, vm-start"
+        "SUPER SHIFT, D, exec, rbw unlock && rbw get --clipboard $(rbw ls | fuzzel --dmenu)"
 
         # screenshot
         "SUPER SHIFT, P, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
