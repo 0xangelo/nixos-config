@@ -7,6 +7,8 @@
 in {
   programs.rbw.enable = true;
 
+  home.packages = with pkgs; [pinentry-gnome3];
+
   sops.templates.${cfg-path} = {
     content = ''
       {
@@ -18,7 +20,7 @@ in {
         "notifications_url": null,
         "lock_timeout": 3600,
         "sync_interval": 3600,
-        "pinentry": "${pkgs.pinentry-gnome3}",
+        "pinentry": "${pkgs.pinentry-gnome3}/bin/pinentry",
         "client_cert_path": null
       }
     '';
