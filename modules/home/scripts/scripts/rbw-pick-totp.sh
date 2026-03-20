@@ -2,19 +2,31 @@
 # rbw-totp-fuzzy: Select entry with fuzzel → copy TOTP to clipboard
 # Shows notifications on errors from rbw ls, fuzzel, or rbw totp
 
-# set -euo pipefail
+notify-bw() {
+    local urgency
+    local summary
+    local body
+    urgency=$1
+    summary=$2
+    body=$3
+    notify-send \
+        -u "$urgency" \
+        --app-name "Bitwarden" \
+        --icon=bitwarden-tray \
+        "$summary" "$body"
+}
 
 # ──────────────────────────────────────────────────────────────────────────────
 # Step 1: Get list of entries
 # ──────────────────────────────────────────────────────────────────────────────
 entries=$(rbw ls 2>&1) || {
     # rbw ls failed → most common: vault locked / not unlocked
-    notify-send -u critical "rbw ls failed" "$entries"
+    notify-bw critical "ls failed" "$entries"
     exit 1
 }
 
 if [[ -z "$entries" ]]; then
-    notify-send -u normal --app-name "rbw" "Warning" "No entries found in vault"
+    notify-bw normal "Warning" "No entries found in vault"
     exit 0
 fi
 
@@ -23,11 +35,15 @@ fi
 # ──────────────────────────────────────────────────────────────────────────────
 selection=$(echo "$entries" | fuzzel --dmenu 2>&1) || {
     # fuzzel failed (crashed, not installed, Wayland socket issue, etc.)
-    # Exit code 1 is normal on cancel → only notify-send -u on real failure
-    if [[ $? -ne 1 || -n "$selection" ]]; then  # something actually went wrong
-        notify-send -u critical --app-name "fuzzel" "Error" "$selection"
+    # Exit code 2 is normal on cancel → only notify-send -u on real failure
+    if [[ $? -ne 2 || -n "$selection" ]]; then  # something actually went wrong
+        notify-send \
+            -u critical \
+            --icon=search-icon \
+            --app-name "fuzzel" \
+            "Error" "$selection"
+        exit 1
     fi
-    exit 1
 }
 
 if [[ -z "$selection" ]]; then
@@ -41,16 +57,15 @@ fi
 # ──────────────────────────────────────────────────────────────────────────────
 # Step 3: Get and copy TOTP
 # ──────────────────────────────────────────────────────────────────────────────
-selection="CIE PIN"
 output=$(rbw totp --clipboard "$selection" 2>&1)
 status=$?
 
 if [[ $status -ne 0 ]]; then
-    notify-send -u critical --app-name "rbw" "$selection" "$output"
+    notify-bw critical "$selection" "$output"
     exit 1
 fi
 
 # Success (optional notification – comment out if too spammy)
-notify-send -u low --app-name "rbw" "$selection" "TOTP copied"
+notify-bw low "$selection" "TOTP copied"
 
 exit 0
