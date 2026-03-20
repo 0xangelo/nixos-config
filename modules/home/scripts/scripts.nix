@@ -11,6 +11,8 @@
 
   show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
 
+  rbw-pick = pkgs.writeScriptBin "rbw-pick" (builtins.readFile ./scripts/rbw-pick.sh);
+
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
@@ -35,6 +37,8 @@ in {
     extract
 
     show-keybinds
+
+    rbw-pick
 
     record
 
