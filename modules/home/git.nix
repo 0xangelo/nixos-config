@@ -88,7 +88,10 @@ in {
     };
   };
 
-  home.packages = with pkgs; [diffnav];
+  home.packages = with pkgs; [
+    diffnav
+    nix-prefetch-github
+  ];
 
   programs.lazygit = {
     enable = true;
