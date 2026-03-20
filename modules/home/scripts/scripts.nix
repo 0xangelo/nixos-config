@@ -12,6 +12,7 @@
   show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
 
   rbw-pick = pkgs.writeScriptBin "rbw-pick" (builtins.readFile ./scripts/rbw-pick.sh);
+  rbw-pick-totp = pkgs.writeScriptBin "rbw-pick-totp" (builtins.readFile ./scripts/rbw-pick-totp.sh);
 
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
@@ -39,6 +40,7 @@ in {
     show-keybinds
 
     rbw-pick
+    rbw-pick-totp
 
     record
 
