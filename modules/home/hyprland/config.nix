@@ -5,7 +5,6 @@
       exec-once = [
         "noctalia-shell --no-duplicate"
         "hyprlock"
-        "poweralertd &"
         "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty -o background_opacity=0.5 bc --quiet'"
       ];
 
