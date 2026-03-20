@@ -126,7 +126,6 @@
         "SUPER, C, togglespecialworkspace, calculator"
         "SUPER, S, togglespecialworkspace, slack"
         "SUPER SHIFT, C, exec, hyprpicker -a"
-        "SUPER SHIFT, W, exec, vm-start"
         "SUPER SHIFT, D, exec, rbw unlock && rbw get --clipboard $(rbw ls | fuzzel --dmenu)"
 
         # screenshot
