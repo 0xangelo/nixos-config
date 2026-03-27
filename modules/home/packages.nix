@@ -55,6 +55,7 @@
     libreoffice
     nemo-with-extensions # file manager
     pavucontrol # pulseaudio volume controle (GUI)
+    signal-desktop # Private, simple, and secure messenger
     slack # Desktop client for Slack
     telegram-desktop
 
