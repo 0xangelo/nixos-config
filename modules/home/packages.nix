@@ -70,12 +70,6 @@
     typst # New markup-based typesetting system that is powerful and easy to learn
     python313Packages.weasyprint # Converts web documents to PDF
 
-    # gRPC
-    # buf # Create consistent Protobuf APIs that preserve compatibility and comply with design best-practices
-    # grpcurl
-    # grpcui
-    # protobuf # Google's data interchange format
-
     # Python
     python3
 
