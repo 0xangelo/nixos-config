@@ -1,13 +1,14 @@
 {...}: {
   imports = [
     (import ./bootloader.nix)
-    (import ./docker.nix)
+    # (import ./docker.nix)
     (import ./hardware.nix)
     # (import ./keyd.nix)
     # (import ./nix-ld.nix)
     (import ./xserver.nix)
     (import ./network.nix)
     (import ./pipewire.nix)
+    (import ./podman.nix)
     (import ./program.nix)
     (import ./security.nix)
     (import ./services.nix)
