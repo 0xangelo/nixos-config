@@ -227,6 +227,7 @@
         "match:title ^(Volume Control)$,                float true, size 700 450, move 40 55%"
         "match:title float_kitty,                       float true, center true, size 400 800, no_blur true"
         "match:title ^(Picture-in-Picture)$,            float true, pin true, opacity 1.0 override 1.0 override,"
+        "match:title Qalculate!,                        workspace special:calculator"
 
         "match:class ^(pavucontrol)$,                   float true"
         "match:class ^(SoundWireServer)$,               float true"
