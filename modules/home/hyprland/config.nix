@@ -120,7 +120,6 @@
         "SUPER, Q, killactive,"
         "SUPER, F, fullscreen, 0"
         "SUPER SHIFT, F, fullscreen, 1"
-        "SUPER SHIFT, T, exec, hyprctl dispatch exec '[workspace 11 silent] telegram-desktop'"
         "SUPER, E, exec, nemo"
         "SUPER, C, togglespecialworkspace, calculator"
         "SUPER, S, togglespecialworkspace, slack"
