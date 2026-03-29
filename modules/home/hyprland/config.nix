@@ -131,8 +131,6 @@
         # screenshot
         "SUPER SHIFT, P, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
         "SUPER, P, exec, grimblast --notify --freeze copy area"
-        # "SUPER, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
-        # ", Print, exec, grimblast --notify --freeze copy area"
 
         # For Monocle layouts
         "SUPER, UP, layoutmsg, cyclenext"
