@@ -1,11 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    swaybg # TODO: remove
     grimblast
     hyprpicker
-    hyprpaper # Blazing fast wayland wallpaper utility
-    glib # TODO: remove
-
     (pkgs.writeShellScriptBin "toggle-layout" (builtins.readFile ./scripts/toggle-layout.sh))
   ];
 
