@@ -134,6 +134,10 @@
         # "SUPER, Print, exec, grimblast --notify --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
         # ", Print, exec, grimblast --notify --freeze copy area"
 
+        # For Monocle layouts
+        "SUPER, UP, layoutmsg, cyclenext"
+        "SUPER, DOWN, layoutmsg, cycleprev"
+
         # switch focus
         "SUPER, H, movefocus, l"
         "SUPER, L, movefocus, r"
@@ -256,6 +260,7 @@
 
         "2, layout:scrolling"
         "4, layout:scrolling"
+        "8, layout:monocle"
         "special:slack, layout:scrolling"
       ];
     };
