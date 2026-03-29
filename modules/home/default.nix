@@ -11,7 +11,6 @@
     ./gtk.nix # gtk theme
     ./helix.nix # Helix code editor
     ./hyprland # Wayland compositor
-    ./iota.nix # IOTA
     ./kitty.nix # terminal
     ./rbw.nix
     ./rust.nix # Rust development
