@@ -5,6 +5,7 @@
     hyprls # LSP server for Hyprland's configuration language
     lua-language-server # Language server that offers Lua language support
     markdown-oxide
+    taplo
   ];
   programs.neovim = {
     enable = true;
