@@ -1,21 +1,21 @@
 {...}: {
   imports = [
-    (import ./bootloader.nix)
-    # (import ./docker.nix)
-    (import ./hardware.nix)
-    # (import ./keyd.nix)
-    # (import ./nix-ld.nix)
-    (import ./xserver.nix)
-    (import ./network.nix)
-    (import ./pipewire.nix)
-    (import ./podman.nix)
-    (import ./program.nix)
-    (import ./security.nix)
-    (import ./services.nix)
-    (import ./stylix.nix)
-    (import ./system.nix)
-    (import ./user.nix)
-    (import ./wayland.nix)
-    (import ./nixd.nix)
+    ./bootloader.nix
+    # ./docker.nix
+    ./hardware.nix
+    # ./keyd.nix
+    # ./nix-ld.nix
+    ./xserver.nix
+    ./network.nix
+    ./pipewire.nix
+    ./podman.nix
+    ./program.nix
+    ./security.nix
+    ./services.nix
+    ./stylix.nix
+    ./system.nix
+    ./user.nix
+    ./wayland.nix
+    ./nixd.nix
   ];
 }
