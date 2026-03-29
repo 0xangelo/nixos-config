@@ -1,8 +1,6 @@
 _: {
   imports = [
-    (import ./hyprland.nix)
-    (import ./config.nix)
-    (import ./hyprlock.nix)
-    (import ./variables.nix)
+    ./hyprland.nix
+    ./config.nix
   ];
 }
