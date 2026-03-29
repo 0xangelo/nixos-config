@@ -1,13 +1,13 @@
 _: {
   virtualisation = {
-    containers.enable = true; # Shared base for Podman/Docker/etc. — almost always needed
+    containers.enable = true;
 
     podman = {
       enable = true;
-      dockerCompat = true; # `docker` command + socket alias (very convenient)
-      defaultNetwork.settings.dns_enabled = true; # Crucial for podman-compose / multi-container networking
+      dockerCompat = true;
+      dockerSocket.enable = true;
+      defaultNetwork.settings.dns_enabled = true;
 
-      # Nice-to-haves for reproducibility & maintenance
       autoPrune.enable = true;
       autoPrune.dates = "weekly";
     };
