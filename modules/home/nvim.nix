@@ -1,4 +1,11 @@
 {pkgs, ...}: {
+  home.packages = with pkgs; [
+    # LSPs
+    bash-language-server
+    hyprls # LSP server for Hyprland's configuration language
+    lua-language-server # Language server that offers Lua language support
+    markdown-oxide
+  ];
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -7,8 +14,10 @@
       taplo
     ];
   };
-  # To avoid Stylix overriding AstroNvim's init.lua
+  programs.neovim.initLua = ''
+    require "astro"
+  '';
+  # To avoid Stylix requiring mini.nvim
   stylix.targets.neovim.enable = false;
-  stylix.targets.neovide.enable = false;
   programs.neovide.enable = true;
 }

@@ -1,8 +1,4 @@
-{
-  lib,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     # CLIs
     alejandra
@@ -41,11 +37,6 @@
     ncspot # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     mprocs # TUI tool to run multiple commands in parallel and show the output of each command separately
     yazi # terminal file manager
-
-    # LSPs
-    bash-language-server
-    hyprls # LSP server for Hyprland's configuration language
-    lua-language-server # Language server that offers Lua language support
 
     # GUIs
     brave # browser
