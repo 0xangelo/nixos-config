@@ -2,11 +2,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     bacon
-    cmake
-    fontconfig # For plotters
-    freetype # For plotters
     just # Handy way to save and run project-specific commands
-    pkg-config # metainformation about installed libraries
     cargo-deadlinks
     cargo-depgraph
     cargo-expand
