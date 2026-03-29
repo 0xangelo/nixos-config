@@ -4,7 +4,6 @@ _: {
     exec-once = [
       "noctalia-shell --no-duplicate"
       "hyprlock"
-      "hyprctl dispatch exec '[workspace special:calculator silent] kitty --title float_kitty -o background_opacity=0.5 bc --quiet'"
     ];
 
     input = {
@@ -240,6 +239,7 @@ _: {
       # Smart gaps: https://wiki.hypr.land/Configuring/Workspace-Rules/#smart-gaps
       "w[tv1], gapsout:0, gapsin:0, border:false, rounding:false"
       "f[1], gapsout:0, gapsin:0, border:false, rounding:false"
+      "special:calculator, on-created-empty:kitty --title float_kitty -o background_opacity=0.5 bc --quiet"
     ];
   };
 
