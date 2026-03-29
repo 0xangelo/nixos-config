@@ -22,6 +22,7 @@
     ./scripts/scripts.nix # personal scripts
     ./sops # secrets manager
     ./starship.nix # shell prompt
+    ./television.nix
     ./tmux.nix
     ./tree-sitter
     ./uair/uair.nix # Extensible pomodoro timer
