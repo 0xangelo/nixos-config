@@ -76,14 +76,6 @@
     # grpcui
     # protobuf # Google's data interchange format
 
-    # C / C++
-    clang
-    (lib.hiPrio gcc) # https://github.com/nix-community/home-manager/issues/1668#issuecomment-1264298055
-    gnumake
-
-    # Go
-    # go
-
     # Python
     python3
 
