@@ -91,7 +91,6 @@
     playerctl # controller for media players
     cliphist # clipboard manager
     poweralertd
-    soundwireserver # pass audio to android phone
     xdg-utils
     zenity # Display dialogs from the command-line/shell scripts.
   ];
