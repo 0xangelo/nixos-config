@@ -12,6 +12,7 @@
     ./helix.nix # Helix code editor
     ./hyprland # Wayland compositor
     ./kitty.nix # terminal
+    ./lazydocker.nix # Docker/Podman TUI
     ./rbw.nix
     ./rust.nix # Rust development
     ./noctalia # Noctalia shell
@@ -19,6 +20,7 @@
     ./opencode.nix
     ./packages.nix # other packages
     ./password_store.nix # GNU password store
+    ./podman.nix
     ./scripts/scripts.nix # personal scripts
     ./sops # secrets manager
     ./starship.nix # shell prompt

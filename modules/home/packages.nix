@@ -33,7 +33,6 @@
     zip # Compressor/archiver for creating and modifying zipfiles
 
     # TUIs
-    lazydocker # A terminal UI for managing Docker containers, images, volumes, and more.
     ncspot # Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes
     mprocs # TUI tool to run multiple commands in parallel and show the output of each command separately
     yazi # terminal file manager
