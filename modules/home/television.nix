@@ -1,7 +1,7 @@
 {lib, ...}: {
   programs.television = {
     enable = true;
-    enableZshIntegration = true;
+    enableZshIntegration = false;
     channels.nix-search-tv.metadata.name = lib.mkForce "nix";
   };
   programs.nix-search-tv = {
