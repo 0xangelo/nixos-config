@@ -240,6 +240,7 @@ _: {
       "w[tv1], gapsout:0, gapsin:0, border:false, rounding:false"
       "f[1], gapsout:0, gapsin:0, border:false, rounding:false"
       "special:calculator, on-created-empty:kitty --title float_kitty -o background_opacity=0.5 bc --quiet"
+      "special:slack, on-created-empty:slack"
     ];
   };
 
