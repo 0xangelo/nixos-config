@@ -24,7 +24,6 @@
     ./starship.nix # shell prompt
     ./television.nix
     ./tmux.nix
-    ./tree-sitter
     ./uair/uair.nix # Extensible pomodoro timer
     ./wayland.nix
     ./zsh.nix # shell
