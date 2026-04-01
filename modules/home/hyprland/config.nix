@@ -115,6 +115,7 @@ _: {
       "SUPER SHIFT, C, exec, hyprpicker -a"
       "SUPER SHIFT, D, exec, rbw-pick"
       "SUPER SHIFT, O, exec, rbw-pick-totp"
+      "SUPER SHIFT, T, togglespecialworkspace, telegram"
       "SUPER, W, exec, toggle-layout"
 
       # screenshot
@@ -211,7 +212,7 @@ _: {
     ];
 
     windowrule = [
-      "match:title Telegram,                          workspace 11 silent"
+      "match:title Telegram,                          workspace special:telegram silent"
       "match:class Slack,                             workspace special:slack silent"
       "match:title ^(Transmission)$,                  float true"
       "match:title ^(Volume Control)$,                float true, size 700 450, move 40 55%"
@@ -241,6 +242,7 @@ _: {
       "f[1], gapsout:0, gapsin:0, border:false, rounding:false"
       "special:calculator, on-created-empty:kitty --title float_kitty -o background_opacity=0.5 bc --quiet"
       "special:slack, on-created-empty:slack"
+      "special:telegram, on-created-empty:Telegram"
     ];
   };
 
