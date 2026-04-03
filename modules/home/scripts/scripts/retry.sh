@@ -31,4 +31,4 @@ function retry {
   return 0
 }
 
-retry $@
+retry "$@"
