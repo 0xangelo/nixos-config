@@ -1,6 +1,4 @@
 {pkgs, ...}: let
-  wall-change = pkgs.writeShellScriptBin "wall-change" (builtins.readFile ./scripts/wall-change.sh);
-
   runbg = pkgs.writeShellScriptBin "runbg" (builtins.readFile ./scripts/runbg.sh);
 
   compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
@@ -19,8 +17,6 @@
   retry = pkgs.writeShellScriptBin "retry" (builtins.readFile ./scripts/retry.sh);
 in {
   home.packages = [
-    wall-change
-
     runbg
 
     compress
