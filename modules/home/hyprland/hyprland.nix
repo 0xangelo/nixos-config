@@ -3,6 +3,7 @@
     grimblast
     hyprpicker
     (pkgs.writeShellScriptBin "toggle-layout" (builtins.readFile ./scripts/toggle-layout.sh))
+    (pkgs.writeShellScriptBin "notify-run" (builtins.readFile ./scripts/notify-run.sh))
   ];
 
   home.sessionVariables = {
