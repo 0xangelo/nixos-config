@@ -41,7 +41,7 @@
       package = pkgs.gruvbox-plus-icons;
     };
 
-    image = ../../wallpapers/otherWallpaper/gruvbox/train.webp;
+    image = ../../wallpapers/gruvbox/train.webp;
 
     opacity = {
       desktop = 0.5;
