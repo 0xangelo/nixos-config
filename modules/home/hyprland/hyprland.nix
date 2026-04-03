@@ -4,6 +4,7 @@
     hyprpicker
     (pkgs.writeShellScriptBin "toggle-layout" (builtins.readFile ./scripts/toggle-layout.sh))
     (pkgs.writeShellScriptBin "notify-run" (builtins.readFile ./scripts/notify-run.sh))
+    (pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh))
   ];
 
   home.sessionVariables = {

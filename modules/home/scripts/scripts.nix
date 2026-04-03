@@ -9,8 +9,6 @@
   compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
   extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
 
-  show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
-
   rbw-pick = pkgs.writeScriptBin "rbw-pick" (builtins.readFile ./scripts/rbw-pick.sh);
   rbw-pick-totp = pkgs.writeScriptBin "rbw-pick-totp" (builtins.readFile ./scripts/rbw-pick-totp.sh);
 
@@ -36,8 +34,6 @@ in {
 
     compress
     extract
-
-    show-keybinds
 
     rbw-pick
     rbw-pick-totp
