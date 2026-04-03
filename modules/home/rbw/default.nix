@@ -9,7 +9,11 @@
 in {
   programs.rbw.enable = true;
 
-  home.packages = with pkgs; [pinentry-gnome3];
+  home.packages = with pkgs; [
+    pinentry-gnome3
+    (pkgs.writeScriptBin "rbw-pick" (builtins.readFile ./rbw-pick.sh))
+    (pkgs.writeScriptBin "rbw-pick-totp" (builtins.readFile ./rbw-pick-totp.sh))
+  ];
 
   sops.templates.${cfg-path} = {
     content = ''

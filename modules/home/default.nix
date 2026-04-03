@@ -13,7 +13,7 @@
     ./hyprland # Wayland compositor
     ./kitty.nix # terminal
     ./lazydocker.nix # Docker/Podman TUI
-    ./rbw.nix
+    ./rbw
     ./rust.nix # Rust development
     ./noctalia # Noctalia shell
     ./nvim.nix # neovim editor

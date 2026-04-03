@@ -9,9 +9,6 @@
   compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
   extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
 
-  rbw-pick = pkgs.writeScriptBin "rbw-pick" (builtins.readFile ./scripts/rbw-pick.sh);
-  rbw-pick-totp = pkgs.writeScriptBin "rbw-pick-totp" (builtins.readFile ./scripts/rbw-pick-totp.sh);
-
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
@@ -34,9 +31,6 @@ in {
 
     compress
     extract
-
-    rbw-pick
-    rbw-pick-totp
 
     record
 
