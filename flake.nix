@@ -34,7 +34,7 @@
     username = "doom";
     system = "x86_64-linux";
   in {
-    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.dusk = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
         nixos-hardware.nixosModules.framework-16-7040-amd
