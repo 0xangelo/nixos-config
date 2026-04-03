@@ -45,9 +45,6 @@
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
-
-      # Emoji
-      emoj = "emoji-fzf preview | fzf --preview 'emoji-fzf get {1}' | cut -d \" \" -f 1 | emoji-fzf get | clipcopy";
     };
   };
 
