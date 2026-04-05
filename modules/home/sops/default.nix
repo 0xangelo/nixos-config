@@ -1,6 +1,6 @@
-{username, ...}: {
+{config, ...}: {
   sops = {
-    age.keyFile = "/home/${username}/.config/sops/age/keys.txt"; # must have no password!
+    age.keyFile = "${config.xdg.configHome}/sops/age/keys.txt"; # must have no password!
     # It's also possible to use a ssh key, but only when it has no password:
     #age.sshKeyPaths = [ "/home/user/path-to-ssh-key" ];
     defaultSopsFile = ./secrets.yaml;
