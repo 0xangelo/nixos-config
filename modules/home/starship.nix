@@ -1,6 +1,3 @@
 _: {
-  programs.starship = {
-    enable = true;
-    enableZshIntegration = true;
-  };
+  programs.starship.enable = true;
 }
