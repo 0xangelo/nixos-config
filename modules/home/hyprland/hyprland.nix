@@ -9,11 +9,8 @@
     (pkgs.writeScriptBin "toggle_oppacity" (builtins.readFile ./scripts/toggle_oppacity.sh))
   ];
 
-  home.sessionVariables = {
-    EDITOR = "nvim";
-    # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
-    NIXOS_OZONE_WL = "1";
-  };
+  # https://wiki.hypr.land/Nix/Hyprland-on-NixOS/
+  home.sessionVariables.NIXOS_OZONE_WL = "1";
 
   programs.hyprlock.enable = true;
 
