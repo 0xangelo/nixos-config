@@ -1,9 +1,6 @@
 {pkgs, ...}: let
   runbg = pkgs.writeShellScriptBin "runbg" (builtins.readFile ./scripts/runbg.sh);
 
-  compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
-  extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
-
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
 
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
@@ -16,9 +13,6 @@
 in {
   home.packages = [
     runbg
-
-    compress
-    extract
 
     record
 
