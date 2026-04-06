@@ -12,8 +12,6 @@
 
   download-gist = pkgs.writeShellScriptBin "download-gist" (builtins.readFile ./scripts/download-gist.sh);
 
-  unreferenced-crates = pkgs.writeShellScriptBin "unreferenced-crates" (builtins.readFile ./scripts/unreferenced-crates.sh);
-
   retry = pkgs.writeShellScriptBin "retry" (builtins.readFile ./scripts/retry.sh);
 in {
   home.packages = [
@@ -29,8 +27,6 @@ in {
     auto-pr-body
 
     download-gist
-
-    unreferenced-crates
 
     retry
   ];
