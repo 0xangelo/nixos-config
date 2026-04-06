@@ -14,6 +14,7 @@
     ./kitty.nix # terminal
     ./lazydocker.nix # Docker/Podman TUI
     ./rbw
+    ./record
     ./rust.nix # Rust development
     ./noctalia # Noctalia shell
     ./nvim.nix # neovim editor

@@ -1,8 +1,6 @@
 {pkgs, ...}: let
   runbg = pkgs.writeShellScriptBin "runbg" (builtins.readFile ./scripts/runbg.sh);
 
-  record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
-
   repo-clone = pkgs.writeScriptBin "repo-clone" (builtins.readFile ./scripts/repo-clone.sh);
 
   auto-pr-body = pkgs.writeShellScriptBin "auto-pr-body" (builtins.readFile ./scripts/auto-pr-body.sh);
@@ -13,8 +11,6 @@
 in {
   home.packages = [
     runbg
-
-    record
 
     repo-clone
 
