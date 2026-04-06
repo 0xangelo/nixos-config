@@ -25,7 +25,7 @@
     ./sops # secrets manager
     ./starship.nix # shell prompt
     ./television.nix
-    ./uair/uair.nix # Extensible pomodoro timer
+    # ./uair/uair.nix # Extensible pomodoro timer
     ./wayland.nix
     ./zsh.nix # shell
   ];
