@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ./audacious/audacious.nix # music player
+    # ./audacious/audacious.nix # music player
     ./bat.nix # better cat command
     ./btop.nix # resouces monitor
     ./direnv.nix
