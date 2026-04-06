@@ -20,7 +20,7 @@
     ./nvim.nix # neovim editor
     ./opencode.nix
     ./packages.nix # other packages
-    ./password_store.nix # GNU password store
+    # ./password_store.nix # GNU password store
     ./podman.nix
     ./scripts/scripts.nix # personal scripts
     ./sops # secrets manager
